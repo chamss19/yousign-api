@@ -18,7 +18,7 @@ Name | Type | Description | Notes
 **sign_image_types_available** | **string[]** | Allow sign images types available for signature. The first type of the list will be selected as default for the signer. | [optional] 
 **default_language** | **string** | Default selected language of the interface. Must be present in \&quot;languages\&quot; field. | [optional] 
 **languages** | **string[]** | Array of allowed languages, use country code | [optional] 
-**labels** | [**\Swagger\Client\Model\SignatureUiLabelInputIncluded[]**](SignatureUiLabelInputIncluded.md) |  | [optional] 
+**labels** | [**\YouSignClient\Model\SignatureUiLabelInputIncluded[]**](SignatureUiLabelInputIncluded.md) |  | [optional] 
 **fonts** | **string[]** | List of fonts to load on the view. (Loaded via Google fonts) | [optional] 
 **style** | **string** | CSS for customize the view | [optional] 
 **redirect_cancel** | **object** | Redirection when a Procedure is refused | [optional] 

@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  YouSignClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace YouSignClient\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \YouSignClient\ObjectSerializer;
 
 /**
  * ProcedureRemindConfigEmail Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  YouSignClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -56,7 +56,7 @@ class ProcedureRemindConfigEmail implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'reminder_executed' => '\Swagger\Client\Model\ConfigEmailTemplate[]'    ];
+        'reminder_executed' => '\YouSignClient\Model\ConfigEmailTemplate[]'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -199,7 +199,7 @@ class ProcedureRemindConfigEmail implements ModelInterface, ArrayAccess
     /**
      * Gets reminder_executed
      *
-     * @return \Swagger\Client\Model\ConfigEmailTemplate[]
+     * @return \YouSignClient\Model\ConfigEmailTemplate[]
      */
     public function getReminderExecuted()
     {
@@ -209,7 +209,7 @@ class ProcedureRemindConfigEmail implements ModelInterface, ArrayAccess
     /**
      * Sets reminder_executed
      *
-     * @param \Swagger\Client\Model\ConfigEmailTemplate[] $reminder_executed reminder_executed
+     * @param \YouSignClient\Model\ConfigEmailTemplate[] $reminder_executed reminder_executed
      *
      * @return $this
      */

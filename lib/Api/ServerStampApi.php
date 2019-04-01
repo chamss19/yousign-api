@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  YouSignClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Api;
+namespace YouSignClient\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -33,16 +33,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Swagger\Client\ApiException;
-use Swagger\Client\Configuration;
-use Swagger\Client\HeaderSelector;
-use Swagger\Client\ObjectSerializer;
+use YouSignClient\ApiException;
+use YouSignClient\Configuration;
+use YouSignClient\HeaderSelector;
+use YouSignClient\ObjectSerializer;
 
 /**
  * ServerStampApi Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  YouSignClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -93,9 +93,9 @@ class ServerStampApi
      * @param  string $content_type The MIME type of the body of the request (required)
      * @param  string $authorization Authentication credentials for HTTP authentication (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \YouSignClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\ServerStampOutput
+     * @return \YouSignClient\Model\ServerStampOutput
      */
     public function serverStampsIdGet($id, $content_type, $authorization)
     {
@@ -110,13 +110,13 @@ class ServerStampApi
      * @param  string $content_type The MIME type of the body of the request (required)
      * @param  string $authorization Authentication credentials for HTTP authentication (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \YouSignClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\ServerStampOutput, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \YouSignClient\Model\ServerStampOutput, HTTP status code, HTTP response headers (array of strings)
      */
     public function serverStampsIdGetWithHttpInfo($id, $content_type, $authorization)
     {
-        $returnType = '\Swagger\Client\Model\ServerStampOutput';
+        $returnType = '\YouSignClient\Model\ServerStampOutput';
         $request = $this->serverStampsIdGetRequest($id, $content_type, $authorization);
 
         try {
@@ -168,7 +168,7 @@ class ServerStampApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ServerStampOutput',
+                        '\YouSignClient\Model\ServerStampOutput',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -214,7 +214,7 @@ class ServerStampApi
      */
     public function serverStampsIdGetAsyncWithHttpInfo($id, $content_type, $authorization)
     {
-        $returnType = '\Swagger\Client\Model\ServerStampOutput';
+        $returnType = '\YouSignClient\Model\ServerStampOutput';
         $request = $this->serverStampsIdGetRequest($id, $content_type, $authorization);
 
         return $this->client
@@ -377,13 +377,13 @@ class ServerStampApi
     /**
      * Operation serverStampsPost
      *
-     * @param  \Swagger\Client\Model\ServerStampInput $body body (required)
+     * @param  \YouSignClient\Model\ServerStampInput $body body (required)
      * @param  string $content_type The MIME type of the body of the request (required)
      * @param  string $authorization Authentication credentials for HTTP authentication (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \YouSignClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\ServerStampOutput
+     * @return \YouSignClient\Model\ServerStampOutput
      */
     public function serverStampsPost($body, $content_type, $authorization)
     {
@@ -394,17 +394,17 @@ class ServerStampApi
     /**
      * Operation serverStampsPostWithHttpInfo
      *
-     * @param  \Swagger\Client\Model\ServerStampInput $body (required)
+     * @param  \YouSignClient\Model\ServerStampInput $body (required)
      * @param  string $content_type The MIME type of the body of the request (required)
      * @param  string $authorization Authentication credentials for HTTP authentication (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \YouSignClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\ServerStampOutput, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \YouSignClient\Model\ServerStampOutput, HTTP status code, HTTP response headers (array of strings)
      */
     public function serverStampsPostWithHttpInfo($body, $content_type, $authorization)
     {
-        $returnType = '\Swagger\Client\Model\ServerStampOutput';
+        $returnType = '\YouSignClient\Model\ServerStampOutput';
         $request = $this->serverStampsPostRequest($body, $content_type, $authorization);
 
         try {
@@ -456,7 +456,7 @@ class ServerStampApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ServerStampOutput',
+                        '\YouSignClient\Model\ServerStampOutput',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -471,7 +471,7 @@ class ServerStampApi
      *
      * 
      *
-     * @param  \Swagger\Client\Model\ServerStampInput $body (required)
+     * @param  \YouSignClient\Model\ServerStampInput $body (required)
      * @param  string $content_type The MIME type of the body of the request (required)
      * @param  string $authorization Authentication credentials for HTTP authentication (required)
      *
@@ -493,7 +493,7 @@ class ServerStampApi
      *
      * 
      *
-     * @param  \Swagger\Client\Model\ServerStampInput $body (required)
+     * @param  \YouSignClient\Model\ServerStampInput $body (required)
      * @param  string $content_type The MIME type of the body of the request (required)
      * @param  string $authorization Authentication credentials for HTTP authentication (required)
      *
@@ -502,7 +502,7 @@ class ServerStampApi
      */
     public function serverStampsPostAsyncWithHttpInfo($body, $content_type, $authorization)
     {
-        $returnType = '\Swagger\Client\Model\ServerStampOutput';
+        $returnType = '\YouSignClient\Model\ServerStampOutput';
         $request = $this->serverStampsPostRequest($body, $content_type, $authorization);
 
         return $this->client
@@ -545,7 +545,7 @@ class ServerStampApi
     /**
      * Create request for operation 'serverStampsPost'
      *
-     * @param  \Swagger\Client\Model\ServerStampInput $body (required)
+     * @param  \YouSignClient\Model\ServerStampInput $body (required)
      * @param  string $content_type The MIME type of the body of the request (required)
      * @param  string $authorization Authentication credentials for HTTP authentication (required)
      *

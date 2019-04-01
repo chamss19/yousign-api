@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  YouSignClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Api;
+namespace YouSignClient\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -33,16 +33,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Swagger\Client\ApiException;
-use Swagger\Client\Configuration;
-use Swagger\Client\HeaderSelector;
-use Swagger\Client\ObjectSerializer;
+use YouSignClient\ApiException;
+use YouSignClient\Configuration;
+use YouSignClient\HeaderSelector;
+use YouSignClient\ObjectSerializer;
 
 /**
  * UserGroupApi Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  YouSignClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -93,9 +93,9 @@ class UserGroupApi
      *
      * @param  string $authorization Authentication credentials for HTTP authentication (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \YouSignClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\UserGroup[]
+     * @return \YouSignClient\Model\UserGroup[]
      */
     public function userGroupsGet($authorization)
     {
@@ -110,13 +110,13 @@ class UserGroupApi
      *
      * @param  string $authorization Authentication credentials for HTTP authentication (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \YouSignClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\UserGroup[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \YouSignClient\Model\UserGroup[], HTTP status code, HTTP response headers (array of strings)
      */
     public function userGroupsGetWithHttpInfo($authorization)
     {
-        $returnType = '\Swagger\Client\Model\UserGroup[]';
+        $returnType = '\YouSignClient\Model\UserGroup[]';
         $request = $this->userGroupsGetRequest($authorization);
 
         try {
@@ -168,7 +168,7 @@ class UserGroupApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\UserGroup[]',
+                        '\YouSignClient\Model\UserGroup[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -210,7 +210,7 @@ class UserGroupApi
      */
     public function userGroupsGetAsyncWithHttpInfo($authorization)
     {
-        $returnType = '\Swagger\Client\Model\UserGroup[]';
+        $returnType = '\YouSignClient\Model\UserGroup[]';
         $request = $this->userGroupsGetRequest($authorization);
 
         return $this->client
@@ -352,9 +352,9 @@ class UserGroupApi
      * @param  string $id id (required)
      * @param  string $authorization Authentication credentials for HTTP authentication (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \YouSignClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\UserGroup
+     * @return \YouSignClient\Model\UserGroup
      */
     public function userGroupsIdGet($id, $authorization)
     {
@@ -370,13 +370,13 @@ class UserGroupApi
      * @param  string $id (required)
      * @param  string $authorization Authentication credentials for HTTP authentication (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \YouSignClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\UserGroup, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \YouSignClient\Model\UserGroup, HTTP status code, HTTP response headers (array of strings)
      */
     public function userGroupsIdGetWithHttpInfo($id, $authorization)
     {
-        $returnType = '\Swagger\Client\Model\UserGroup';
+        $returnType = '\YouSignClient\Model\UserGroup';
         $request = $this->userGroupsIdGetRequest($id, $authorization);
 
         try {
@@ -428,7 +428,7 @@ class UserGroupApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\UserGroup',
+                        '\YouSignClient\Model\UserGroup',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -472,7 +472,7 @@ class UserGroupApi
      */
     public function userGroupsIdGetAsyncWithHttpInfo($id, $authorization)
     {
-        $returnType = '\Swagger\Client\Model\UserGroup';
+        $returnType = '\YouSignClient\Model\UserGroup';
         $request = $this->userGroupsIdGetRequest($id, $authorization);
 
         return $this->client

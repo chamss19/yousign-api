@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  YouSignClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Api;
+namespace YouSignClient\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -33,16 +33,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Swagger\Client\ApiException;
-use Swagger\Client\Configuration;
-use Swagger\Client\HeaderSelector;
-use Swagger\Client\ObjectSerializer;
+use YouSignClient\ApiException;
+use YouSignClient\Configuration;
+use YouSignClient\HeaderSelector;
+use YouSignClient\ObjectSerializer;
 
 /**
  * CheckDocumentApi Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  YouSignClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -94,9 +94,9 @@ class CheckDocumentApi
      * @param  string $id id (required)
      * @param  string $authorization Authentication credentials for HTTP authentication (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \YouSignClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\CheckDocumentBankAccountsOutput
+     * @return \YouSignClient\Model\CheckDocumentBankAccountsOutput
      */
     public function checkDocumentBankAccountsIdGet($id, $authorization)
     {
@@ -112,13 +112,13 @@ class CheckDocumentApi
      * @param  string $id (required)
      * @param  string $authorization Authentication credentials for HTTP authentication (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \YouSignClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\CheckDocumentBankAccountsOutput, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \YouSignClient\Model\CheckDocumentBankAccountsOutput, HTTP status code, HTTP response headers (array of strings)
      */
     public function checkDocumentBankAccountsIdGetWithHttpInfo($id, $authorization)
     {
-        $returnType = '\Swagger\Client\Model\CheckDocumentBankAccountsOutput';
+        $returnType = '\YouSignClient\Model\CheckDocumentBankAccountsOutput';
         $request = $this->checkDocumentBankAccountsIdGetRequest($id, $authorization);
 
         try {
@@ -170,7 +170,7 @@ class CheckDocumentApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\CheckDocumentBankAccountsOutput',
+                        '\YouSignClient\Model\CheckDocumentBankAccountsOutput',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -214,7 +214,7 @@ class CheckDocumentApi
      */
     public function checkDocumentBankAccountsIdGetAsyncWithHttpInfo($id, $authorization)
     {
-        $returnType = '\Swagger\Client\Model\CheckDocumentBankAccountsOutput';
+        $returnType = '\YouSignClient\Model\CheckDocumentBankAccountsOutput';
         $request = $this->checkDocumentBankAccountsIdGetRequest($id, $authorization);
 
         return $this->client
@@ -368,13 +368,13 @@ class CheckDocumentApi
      *
      * Verify a bank document (RIB)
      *
-     * @param  \Swagger\Client\Model\CheckDocumentBankAccountsInput $body body (required)
+     * @param  \YouSignClient\Model\CheckDocumentBankAccountsInput $body body (required)
      * @param  string $content_type The MIME type of the body of the request (required)
      * @param  string $authorization Authentication credentials for HTTP authentication (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \YouSignClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\CheckDocumentBankAccountsOutput
+     * @return \YouSignClient\Model\CheckDocumentBankAccountsOutput
      */
     public function checkDocumentBankAccountsPost($body, $content_type, $authorization)
     {
@@ -387,17 +387,17 @@ class CheckDocumentApi
      *
      * Verify a bank document (RIB)
      *
-     * @param  \Swagger\Client\Model\CheckDocumentBankAccountsInput $body (required)
+     * @param  \YouSignClient\Model\CheckDocumentBankAccountsInput $body (required)
      * @param  string $content_type The MIME type of the body of the request (required)
      * @param  string $authorization Authentication credentials for HTTP authentication (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \YouSignClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\CheckDocumentBankAccountsOutput, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \YouSignClient\Model\CheckDocumentBankAccountsOutput, HTTP status code, HTTP response headers (array of strings)
      */
     public function checkDocumentBankAccountsPostWithHttpInfo($body, $content_type, $authorization)
     {
-        $returnType = '\Swagger\Client\Model\CheckDocumentBankAccountsOutput';
+        $returnType = '\YouSignClient\Model\CheckDocumentBankAccountsOutput';
         $request = $this->checkDocumentBankAccountsPostRequest($body, $content_type, $authorization);
 
         try {
@@ -449,7 +449,7 @@ class CheckDocumentApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\CheckDocumentBankAccountsOutput',
+                        '\YouSignClient\Model\CheckDocumentBankAccountsOutput',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -464,7 +464,7 @@ class CheckDocumentApi
      *
      * Verify a bank document (RIB)
      *
-     * @param  \Swagger\Client\Model\CheckDocumentBankAccountsInput $body (required)
+     * @param  \YouSignClient\Model\CheckDocumentBankAccountsInput $body (required)
      * @param  string $content_type The MIME type of the body of the request (required)
      * @param  string $authorization Authentication credentials for HTTP authentication (required)
      *
@@ -486,7 +486,7 @@ class CheckDocumentApi
      *
      * Verify a bank document (RIB)
      *
-     * @param  \Swagger\Client\Model\CheckDocumentBankAccountsInput $body (required)
+     * @param  \YouSignClient\Model\CheckDocumentBankAccountsInput $body (required)
      * @param  string $content_type The MIME type of the body of the request (required)
      * @param  string $authorization Authentication credentials for HTTP authentication (required)
      *
@@ -495,7 +495,7 @@ class CheckDocumentApi
      */
     public function checkDocumentBankAccountsPostAsyncWithHttpInfo($body, $content_type, $authorization)
     {
-        $returnType = '\Swagger\Client\Model\CheckDocumentBankAccountsOutput';
+        $returnType = '\YouSignClient\Model\CheckDocumentBankAccountsOutput';
         $request = $this->checkDocumentBankAccountsPostRequest($body, $content_type, $authorization);
 
         return $this->client
@@ -538,7 +538,7 @@ class CheckDocumentApi
     /**
      * Create request for operation 'checkDocumentBankAccountsPost'
      *
-     * @param  \Swagger\Client\Model\CheckDocumentBankAccountsInput $body (required)
+     * @param  \YouSignClient\Model\CheckDocumentBankAccountsInput $body (required)
      * @param  string $content_type The MIME type of the body of the request (required)
      * @param  string $authorization Authentication credentials for HTTP authentication (required)
      *
@@ -658,9 +658,9 @@ class CheckDocumentApi
      * @param  string $id id (required)
      * @param  string $authorization Authentication credentials for HTTP authentication (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \YouSignClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\CheckDocumentIdentitiesOutput
+     * @return \YouSignClient\Model\CheckDocumentIdentitiesOutput
      */
     public function checkDocumentIdentitiesIdGet($id, $authorization)
     {
@@ -676,13 +676,13 @@ class CheckDocumentApi
      * @param  string $id (required)
      * @param  string $authorization Authentication credentials for HTTP authentication (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \YouSignClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\CheckDocumentIdentitiesOutput, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \YouSignClient\Model\CheckDocumentIdentitiesOutput, HTTP status code, HTTP response headers (array of strings)
      */
     public function checkDocumentIdentitiesIdGetWithHttpInfo($id, $authorization)
     {
-        $returnType = '\Swagger\Client\Model\CheckDocumentIdentitiesOutput';
+        $returnType = '\YouSignClient\Model\CheckDocumentIdentitiesOutput';
         $request = $this->checkDocumentIdentitiesIdGetRequest($id, $authorization);
 
         try {
@@ -734,7 +734,7 @@ class CheckDocumentApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\CheckDocumentIdentitiesOutput',
+                        '\YouSignClient\Model\CheckDocumentIdentitiesOutput',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -778,7 +778,7 @@ class CheckDocumentApi
      */
     public function checkDocumentIdentitiesIdGetAsyncWithHttpInfo($id, $authorization)
     {
-        $returnType = '\Swagger\Client\Model\CheckDocumentIdentitiesOutput';
+        $returnType = '\YouSignClient\Model\CheckDocumentIdentitiesOutput';
         $request = $this->checkDocumentIdentitiesIdGetRequest($id, $authorization);
 
         return $this->client
@@ -932,13 +932,13 @@ class CheckDocumentApi
      *
      * Verify an identity document (passport, id cards)
      *
-     * @param  \Swagger\Client\Model\CheckDocumentIdentitiesInput $body body (required)
+     * @param  \YouSignClient\Model\CheckDocumentIdentitiesInput $body body (required)
      * @param  string $content_type The MIME type of the body of the request (required)
      * @param  string $authorization Authentication credentials for HTTP authentication (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \YouSignClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\CheckDocumentIdentitiesOutput
+     * @return \YouSignClient\Model\CheckDocumentIdentitiesOutput
      */
     public function checkDocumentIdentitiesPost($body, $content_type, $authorization)
     {
@@ -951,17 +951,17 @@ class CheckDocumentApi
      *
      * Verify an identity document (passport, id cards)
      *
-     * @param  \Swagger\Client\Model\CheckDocumentIdentitiesInput $body (required)
+     * @param  \YouSignClient\Model\CheckDocumentIdentitiesInput $body (required)
      * @param  string $content_type The MIME type of the body of the request (required)
      * @param  string $authorization Authentication credentials for HTTP authentication (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \YouSignClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\CheckDocumentIdentitiesOutput, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \YouSignClient\Model\CheckDocumentIdentitiesOutput, HTTP status code, HTTP response headers (array of strings)
      */
     public function checkDocumentIdentitiesPostWithHttpInfo($body, $content_type, $authorization)
     {
-        $returnType = '\Swagger\Client\Model\CheckDocumentIdentitiesOutput';
+        $returnType = '\YouSignClient\Model\CheckDocumentIdentitiesOutput';
         $request = $this->checkDocumentIdentitiesPostRequest($body, $content_type, $authorization);
 
         try {
@@ -1013,7 +1013,7 @@ class CheckDocumentApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\CheckDocumentIdentitiesOutput',
+                        '\YouSignClient\Model\CheckDocumentIdentitiesOutput',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1028,7 +1028,7 @@ class CheckDocumentApi
      *
      * Verify an identity document (passport, id cards)
      *
-     * @param  \Swagger\Client\Model\CheckDocumentIdentitiesInput $body (required)
+     * @param  \YouSignClient\Model\CheckDocumentIdentitiesInput $body (required)
      * @param  string $content_type The MIME type of the body of the request (required)
      * @param  string $authorization Authentication credentials for HTTP authentication (required)
      *
@@ -1050,7 +1050,7 @@ class CheckDocumentApi
      *
      * Verify an identity document (passport, id cards)
      *
-     * @param  \Swagger\Client\Model\CheckDocumentIdentitiesInput $body (required)
+     * @param  \YouSignClient\Model\CheckDocumentIdentitiesInput $body (required)
      * @param  string $content_type The MIME type of the body of the request (required)
      * @param  string $authorization Authentication credentials for HTTP authentication (required)
      *
@@ -1059,7 +1059,7 @@ class CheckDocumentApi
      */
     public function checkDocumentIdentitiesPostAsyncWithHttpInfo($body, $content_type, $authorization)
     {
-        $returnType = '\Swagger\Client\Model\CheckDocumentIdentitiesOutput';
+        $returnType = '\YouSignClient\Model\CheckDocumentIdentitiesOutput';
         $request = $this->checkDocumentIdentitiesPostRequest($body, $content_type, $authorization);
 
         return $this->client
@@ -1102,7 +1102,7 @@ class CheckDocumentApi
     /**
      * Create request for operation 'checkDocumentIdentitiesPost'
      *
-     * @param  \Swagger\Client\Model\CheckDocumentIdentitiesInput $body (required)
+     * @param  \YouSignClient\Model\CheckDocumentIdentitiesInput $body (required)
      * @param  string $content_type The MIME type of the body of the request (required)
      * @param  string $authorization Authentication credentials for HTTP authentication (required)
      *

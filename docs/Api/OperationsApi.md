@@ -1,4 +1,4 @@
-# Swagger\Client\OperationsApi
+# YouSignClient\OperationsApi
 
 All URIs are relative to *https://api.yousign.com/*
 
@@ -8,7 +8,7 @@ Method | HTTP request | Description
 [**operationsPost**](OperationsApi.md#operationsPost) | **POST** /operations | Create a new Operation
 
 # **operationsIdGet**
-> \Swagger\Client\Model\OperationOutput operationsIdGet($id, $authorization)
+> \YouSignClient\Model\OperationOutput operationsIdGet($id, $authorization)
 
 Find an Operation by ID
 
@@ -17,7 +17,7 @@ Find an Operation by ID
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\OperationsApi(
+$apiInstance = new YouSignClient\Api\OperationsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -43,7 +43,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\OperationOutput**](../Model/OperationOutput.md)
+[**\YouSignClient\Model\OperationOutput**](../Model/OperationOutput.md)
 
 ### Authorization
 
@@ -57,7 +57,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **operationsPost**
-> \Swagger\Client\Model\OperationOutput operationsPost($body, $content_type, $authorization)
+> \YouSignClient\Model\OperationOutput operationsPost($body, $content_type, $authorization)
 
 Create a new Operation
 
@@ -66,7 +66,7 @@ Create a new Operation
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\OperationsApi(
+$apiInstance = new YouSignClient\Api\OperationsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -94,7 +94,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\OperationOutput**](../Model/OperationOutput.md)
+[**\YouSignClient\Model\OperationOutput**](../Model/OperationOutput.md)
 
 ### Authorization
 

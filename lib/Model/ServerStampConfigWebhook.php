@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  YouSignClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace YouSignClient\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \YouSignClient\ObjectSerializer;
 
 /**
  * ServerStampConfigWebhook Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  YouSignClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -56,7 +56,7 @@ class ServerStampConfigWebhook implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'server_stamp_finished' => '\Swagger\Client\Model\ConfigWebhookTemplate[]'    ];
+        'server_stamp_finished' => '\YouSignClient\Model\ConfigWebhookTemplate[]'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -199,7 +199,7 @@ class ServerStampConfigWebhook implements ModelInterface, ArrayAccess
     /**
      * Gets server_stamp_finished
      *
-     * @return \Swagger\Client\Model\ConfigWebhookTemplate[]
+     * @return \YouSignClient\Model\ConfigWebhookTemplate[]
      */
     public function getServerStampFinished()
     {
@@ -209,7 +209,7 @@ class ServerStampConfigWebhook implements ModelInterface, ArrayAccess
     /**
      * Sets server_stamp_finished
      *
-     * @param \Swagger\Client\Model\ConfigWebhookTemplate[] $server_stamp_finished server_stamp_finished
+     * @param \YouSignClient\Model\ConfigWebhookTemplate[] $server_stamp_finished server_stamp_finished
      *
      * @return $this
      */

@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  YouSignClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Api;
+namespace YouSignClient\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -33,16 +33,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Swagger\Client\ApiException;
-use Swagger\Client\Configuration;
-use Swagger\Client\HeaderSelector;
-use Swagger\Client\ObjectSerializer;
+use YouSignClient\ApiException;
+use YouSignClient\Configuration;
+use YouSignClient\HeaderSelector;
+use YouSignClient\ObjectSerializer;
 
 /**
  * FileObjectApi Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  YouSignClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -93,7 +93,7 @@ class FileObjectApi
      *
      * @param  string $id id (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \YouSignClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -109,7 +109,7 @@ class FileObjectApi
      *
      * @param  string $id (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \YouSignClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -318,9 +318,9 @@ class FileObjectApi
      *
      * @param  string $id id (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \YouSignClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\FileObjectOutput
+     * @return \YouSignClient\Model\FileObjectOutput
      */
     public function fileObjectsIdGet($id)
     {
@@ -335,13 +335,13 @@ class FileObjectApi
      *
      * @param  string $id (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \YouSignClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\FileObjectOutput, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \YouSignClient\Model\FileObjectOutput, HTTP status code, HTTP response headers (array of strings)
      */
     public function fileObjectsIdGetWithHttpInfo($id)
     {
-        $returnType = '\Swagger\Client\Model\FileObjectOutput';
+        $returnType = '\YouSignClient\Model\FileObjectOutput';
         $request = $this->fileObjectsIdGetRequest($id);
 
         try {
@@ -393,7 +393,7 @@ class FileObjectApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\FileObjectOutput',
+                        '\YouSignClient\Model\FileObjectOutput',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -435,7 +435,7 @@ class FileObjectApi
      */
     public function fileObjectsIdGetAsyncWithHttpInfo($id)
     {
-        $returnType = '\Swagger\Client\Model\FileObjectOutput';
+        $returnType = '\YouSignClient\Model\FileObjectOutput';
         $request = $this->fileObjectsIdGetRequest($id);
 
         return $this->client
@@ -578,12 +578,12 @@ class FileObjectApi
      *
      * Update a File Object
      *
-     * @param  \Swagger\Client\Model\FileObjectInput $body body (required)
+     * @param  \YouSignClient\Model\FileObjectInput $body body (required)
      * @param  string $id id (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \YouSignClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\FileObjectOutput
+     * @return \YouSignClient\Model\FileObjectOutput
      */
     public function fileObjectsIdPut($body, $id)
     {
@@ -596,16 +596,16 @@ class FileObjectApi
      *
      * Update a File Object
      *
-     * @param  \Swagger\Client\Model\FileObjectInput $body (required)
+     * @param  \YouSignClient\Model\FileObjectInput $body (required)
      * @param  string $id (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \YouSignClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\FileObjectOutput, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \YouSignClient\Model\FileObjectOutput, HTTP status code, HTTP response headers (array of strings)
      */
     public function fileObjectsIdPutWithHttpInfo($body, $id)
     {
-        $returnType = '\Swagger\Client\Model\FileObjectOutput';
+        $returnType = '\YouSignClient\Model\FileObjectOutput';
         $request = $this->fileObjectsIdPutRequest($body, $id);
 
         try {
@@ -657,7 +657,7 @@ class FileObjectApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\FileObjectOutput',
+                        '\YouSignClient\Model\FileObjectOutput',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -672,7 +672,7 @@ class FileObjectApi
      *
      * Update a File Object
      *
-     * @param  \Swagger\Client\Model\FileObjectInput $body (required)
+     * @param  \YouSignClient\Model\FileObjectInput $body (required)
      * @param  string $id (required)
      *
      * @throws \InvalidArgumentException
@@ -693,7 +693,7 @@ class FileObjectApi
      *
      * Update a File Object
      *
-     * @param  \Swagger\Client\Model\FileObjectInput $body (required)
+     * @param  \YouSignClient\Model\FileObjectInput $body (required)
      * @param  string $id (required)
      *
      * @throws \InvalidArgumentException
@@ -701,7 +701,7 @@ class FileObjectApi
      */
     public function fileObjectsIdPutAsyncWithHttpInfo($body, $id)
     {
-        $returnType = '\Swagger\Client\Model\FileObjectOutput';
+        $returnType = '\YouSignClient\Model\FileObjectOutput';
         $request = $this->fileObjectsIdPutRequest($body, $id);
 
         return $this->client
@@ -744,7 +744,7 @@ class FileObjectApi
     /**
      * Create request for operation 'fileObjectsIdPut'
      *
-     * @param  \Swagger\Client\Model\FileObjectInput $body (required)
+     * @param  \YouSignClient\Model\FileObjectInput $body (required)
      * @param  string $id (required)
      *
      * @throws \InvalidArgumentException
@@ -854,11 +854,11 @@ class FileObjectApi
      *
      * Create a new File Object
      *
-     * @param  \Swagger\Client\Model\FileObjectInput $body body (required)
+     * @param  \YouSignClient\Model\FileObjectInput $body body (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \YouSignClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\FileObjectOutput
+     * @return \YouSignClient\Model\FileObjectOutput
      */
     public function fileObjectsPost($body)
     {
@@ -871,15 +871,15 @@ class FileObjectApi
      *
      * Create a new File Object
      *
-     * @param  \Swagger\Client\Model\FileObjectInput $body (required)
+     * @param  \YouSignClient\Model\FileObjectInput $body (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \YouSignClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\FileObjectOutput, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \YouSignClient\Model\FileObjectOutput, HTTP status code, HTTP response headers (array of strings)
      */
     public function fileObjectsPostWithHttpInfo($body)
     {
-        $returnType = '\Swagger\Client\Model\FileObjectOutput';
+        $returnType = '\YouSignClient\Model\FileObjectOutput';
         $request = $this->fileObjectsPostRequest($body);
 
         try {
@@ -931,7 +931,7 @@ class FileObjectApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\FileObjectOutput',
+                        '\YouSignClient\Model\FileObjectOutput',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -946,7 +946,7 @@ class FileObjectApi
      *
      * Create a new File Object
      *
-     * @param  \Swagger\Client\Model\FileObjectInput $body (required)
+     * @param  \YouSignClient\Model\FileObjectInput $body (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -966,14 +966,14 @@ class FileObjectApi
      *
      * Create a new File Object
      *
-     * @param  \Swagger\Client\Model\FileObjectInput $body (required)
+     * @param  \YouSignClient\Model\FileObjectInput $body (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function fileObjectsPostAsyncWithHttpInfo($body)
     {
-        $returnType = '\Swagger\Client\Model\FileObjectOutput';
+        $returnType = '\YouSignClient\Model\FileObjectOutput';
         $request = $this->fileObjectsPostRequest($body);
 
         return $this->client
@@ -1016,7 +1016,7 @@ class FileObjectApi
     /**
      * Create request for operation 'fileObjectsPost'
      *
-     * @param  \Swagger\Client\Model\FileObjectInput $body (required)
+     * @param  \YouSignClient\Model\FileObjectInput $body (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

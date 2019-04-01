@@ -6,7 +6,7 @@ Name | Type | Description | Notes
 **id** | **string** | Id of operation | [optional] 
 **created_at** | [**\DateTime**](\DateTime.md) | Date of creation | [optional] 
 **updated_at** | [**\DateTime**](\DateTime.md) | Last date of update | [optional] 
-**authentication** | [**\Swagger\Client\Model\AuthenticationInweboOutput**](AuthenticationInweboOutput.md) |  | [optional] 
+**authentication** | [**\YouSignClient\Model\AuthenticationInweboOutput**](AuthenticationInweboOutput.md) |  | [optional] 
 **mode** | **string** | Mode of authentication | [optional] 
 **status** | **string** | Status of operation | [optional] 
 **type** | **string** | Type of operation | [optional] 

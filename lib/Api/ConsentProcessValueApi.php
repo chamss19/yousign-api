@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  YouSignClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Api;
+namespace YouSignClient\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -33,16 +33,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Swagger\Client\ApiException;
-use Swagger\Client\Configuration;
-use Swagger\Client\HeaderSelector;
-use Swagger\Client\ObjectSerializer;
+use YouSignClient\ApiException;
+use YouSignClient\Configuration;
+use YouSignClient\HeaderSelector;
+use YouSignClient\ObjectSerializer;
 
 /**
  * ConsentProcessValueApi Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  YouSignClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -94,9 +94,9 @@ class ConsentProcessValueApi
      * @param  string $member id of member (required)
      * @param  string $authorization Authentication credentials for HTTP authentication (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \YouSignClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\ConsentProcessValueOutput
+     * @return \YouSignClient\Model\ConsentProcessValueOutput
      */
     public function consentProcessValuesGet($member, $authorization = null)
     {
@@ -112,13 +112,13 @@ class ConsentProcessValueApi
      * @param  string $member id of member (required)
      * @param  string $authorization Authentication credentials for HTTP authentication (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \YouSignClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\ConsentProcessValueOutput, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \YouSignClient\Model\ConsentProcessValueOutput, HTTP status code, HTTP response headers (array of strings)
      */
     public function consentProcessValuesGetWithHttpInfo($member, $authorization = null)
     {
-        $returnType = '\Swagger\Client\Model\ConsentProcessValueOutput';
+        $returnType = '\YouSignClient\Model\ConsentProcessValueOutput';
         $request = $this->consentProcessValuesGetRequest($member, $authorization);
 
         try {
@@ -170,7 +170,7 @@ class ConsentProcessValueApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ConsentProcessValueOutput',
+                        '\YouSignClient\Model\ConsentProcessValueOutput',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -214,7 +214,7 @@ class ConsentProcessValueApi
      */
     public function consentProcessValuesGetAsyncWithHttpInfo($member, $authorization = null)
     {
-        $returnType = '\Swagger\Client\Model\ConsentProcessValueOutput';
+        $returnType = '\YouSignClient\Model\ConsentProcessValueOutput';
         $request = $this->consentProcessValuesGetRequest($member, $authorization);
 
         return $this->client
@@ -362,9 +362,9 @@ class ConsentProcessValueApi
      * @param  string $member id of member (required for anonymous) (optional)
      * @param  string $authorization Authentication credentials for HTTP authentication (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \YouSignClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\ConsentProcessValueOutput
+     * @return \YouSignClient\Model\ConsentProcessValueOutput
      */
     public function consentProcessValuesIdGet($id, $member = null, $authorization = null)
     {
@@ -381,13 +381,13 @@ class ConsentProcessValueApi
      * @param  string $member id of member (required for anonymous) (optional)
      * @param  string $authorization Authentication credentials for HTTP authentication (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \YouSignClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\ConsentProcessValueOutput, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \YouSignClient\Model\ConsentProcessValueOutput, HTTP status code, HTTP response headers (array of strings)
      */
     public function consentProcessValuesIdGetWithHttpInfo($id, $member = null, $authorization = null)
     {
-        $returnType = '\Swagger\Client\Model\ConsentProcessValueOutput';
+        $returnType = '\YouSignClient\Model\ConsentProcessValueOutput';
         $request = $this->consentProcessValuesIdGetRequest($id, $member, $authorization);
 
         try {
@@ -439,7 +439,7 @@ class ConsentProcessValueApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ConsentProcessValueOutput',
+                        '\YouSignClient\Model\ConsentProcessValueOutput',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -485,7 +485,7 @@ class ConsentProcessValueApi
      */
     public function consentProcessValuesIdGetAsyncWithHttpInfo($id, $member = null, $authorization = null)
     {
-        $returnType = '\Swagger\Client\Model\ConsentProcessValueOutput';
+        $returnType = '\YouSignClient\Model\ConsentProcessValueOutput';
         $request = $this->consentProcessValuesIdGetRequest($id, $member, $authorization);
 
         return $this->client
@@ -638,13 +638,13 @@ class ConsentProcessValueApi
      *
      * Create a new Consent Process Value
      *
-     * @param  \Swagger\Client\Model\ConsentProcessValueInput $body body (required)
+     * @param  \YouSignClient\Model\ConsentProcessValueInput $body body (required)
      * @param  string $content_type The MIME type of the body of the request (optional)
      * @param  string $authorization Authentication credentials for HTTP authentication (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \YouSignClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\ConsentProcessValueOutput
+     * @return \YouSignClient\Model\ConsentProcessValueOutput
      */
     public function consentProcessValuesPost($body, $content_type = null, $authorization = null)
     {
@@ -657,17 +657,17 @@ class ConsentProcessValueApi
      *
      * Create a new Consent Process Value
      *
-     * @param  \Swagger\Client\Model\ConsentProcessValueInput $body (required)
+     * @param  \YouSignClient\Model\ConsentProcessValueInput $body (required)
      * @param  string $content_type The MIME type of the body of the request (optional)
      * @param  string $authorization Authentication credentials for HTTP authentication (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \YouSignClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\ConsentProcessValueOutput, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \YouSignClient\Model\ConsentProcessValueOutput, HTTP status code, HTTP response headers (array of strings)
      */
     public function consentProcessValuesPostWithHttpInfo($body, $content_type = null, $authorization = null)
     {
-        $returnType = '\Swagger\Client\Model\ConsentProcessValueOutput';
+        $returnType = '\YouSignClient\Model\ConsentProcessValueOutput';
         $request = $this->consentProcessValuesPostRequest($body, $content_type, $authorization);
 
         try {
@@ -719,7 +719,7 @@ class ConsentProcessValueApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ConsentProcessValueOutput',
+                        '\YouSignClient\Model\ConsentProcessValueOutput',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -734,7 +734,7 @@ class ConsentProcessValueApi
      *
      * Create a new Consent Process Value
      *
-     * @param  \Swagger\Client\Model\ConsentProcessValueInput $body (required)
+     * @param  \YouSignClient\Model\ConsentProcessValueInput $body (required)
      * @param  string $content_type The MIME type of the body of the request (optional)
      * @param  string $authorization Authentication credentials for HTTP authentication (optional)
      *
@@ -756,7 +756,7 @@ class ConsentProcessValueApi
      *
      * Create a new Consent Process Value
      *
-     * @param  \Swagger\Client\Model\ConsentProcessValueInput $body (required)
+     * @param  \YouSignClient\Model\ConsentProcessValueInput $body (required)
      * @param  string $content_type The MIME type of the body of the request (optional)
      * @param  string $authorization Authentication credentials for HTTP authentication (optional)
      *
@@ -765,7 +765,7 @@ class ConsentProcessValueApi
      */
     public function consentProcessValuesPostAsyncWithHttpInfo($body, $content_type = null, $authorization = null)
     {
-        $returnType = '\Swagger\Client\Model\ConsentProcessValueOutput';
+        $returnType = '\YouSignClient\Model\ConsentProcessValueOutput';
         $request = $this->consentProcessValuesPostRequest($body, $content_type, $authorization);
 
         return $this->client
@@ -808,7 +808,7 @@ class ConsentProcessValueApi
     /**
      * Create request for operation 'consentProcessValuesPost'
      *
-     * @param  \Swagger\Client\Model\ConsentProcessValueInput $body (required)
+     * @param  \YouSignClient\Model\ConsentProcessValueInput $body (required)
      * @param  string $content_type The MIME type of the body of the request (optional)
      * @param  string $authorization Authentication credentials for HTTP authentication (optional)
      *

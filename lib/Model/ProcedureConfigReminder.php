@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  YouSignClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace YouSignClient\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \YouSignClient\ObjectSerializer;
 
 /**
  * ProcedureConfigReminder Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  YouSignClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,7 +58,7 @@ class ProcedureConfigReminder implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'interval' => 'int',
 'limit' => 'int',
-'config' => '\Swagger\Client\Model\ProcedureConfigReminderConfig'    ];
+'config' => '\YouSignClient\Model\ProcedureConfigReminderConfig'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -262,7 +262,7 @@ class ProcedureConfigReminder implements ModelInterface, ArrayAccess
     /**
      * Gets config
      *
-     * @return \Swagger\Client\Model\ProcedureConfigReminderConfig
+     * @return \YouSignClient\Model\ProcedureConfigReminderConfig
      */
     public function getConfig()
     {
@@ -272,7 +272,7 @@ class ProcedureConfigReminder implements ModelInterface, ArrayAccess
     /**
      * Sets config
      *
-     * @param \Swagger\Client\Model\ProcedureConfigReminderConfig $config config
+     * @param \YouSignClient\Model\ProcedureConfigReminderConfig $config config
      *
      * @return $this
      */

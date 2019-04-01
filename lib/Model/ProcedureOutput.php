@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  YouSignClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace YouSignClient\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \YouSignClient\ObjectSerializer;
 
 /**
  * ProcedureOutput Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  YouSignClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -71,9 +71,9 @@ class ProcedureOutput implements ModelInterface, ArrayAccess
 'ordered' => 'bool',
 'parent' => 'string',
 'metadata' => 'object',
-'config' => '\Swagger\Client\Model\ProcedureConfig',
-'members' => '\Swagger\Client\Model\MemberOutput[]',
-'files' => '\Swagger\Client\Model\FileOutput[]',
+'config' => '\YouSignClient\Model\ProcedureConfig',
+'members' => '\YouSignClient\Model\MemberOutput[]',
+'files' => '\YouSignClient\Model\FileOutput[]',
 'related_files_enable' => 'bool',
 'archive' => 'bool'    ];
 
@@ -709,7 +709,7 @@ self::STATUS_REFUSED,        ];
     /**
      * Gets config
      *
-     * @return \Swagger\Client\Model\ProcedureConfig
+     * @return \YouSignClient\Model\ProcedureConfig
      */
     public function getConfig()
     {
@@ -719,7 +719,7 @@ self::STATUS_REFUSED,        ];
     /**
      * Sets config
      *
-     * @param \Swagger\Client\Model\ProcedureConfig $config config
+     * @param \YouSignClient\Model\ProcedureConfig $config config
      *
      * @return $this
      */
@@ -733,7 +733,7 @@ self::STATUS_REFUSED,        ];
     /**
      * Gets members
      *
-     * @return \Swagger\Client\Model\MemberOutput[]
+     * @return \YouSignClient\Model\MemberOutput[]
      */
     public function getMembers()
     {
@@ -743,7 +743,7 @@ self::STATUS_REFUSED,        ];
     /**
      * Sets members
      *
-     * @param \Swagger\Client\Model\MemberOutput[] $members members
+     * @param \YouSignClient\Model\MemberOutput[] $members members
      *
      * @return $this
      */
@@ -757,7 +757,7 @@ self::STATUS_REFUSED,        ];
     /**
      * Gets files
      *
-     * @return \Swagger\Client\Model\FileOutput[]
+     * @return \YouSignClient\Model\FileOutput[]
      */
     public function getFiles()
     {
@@ -767,7 +767,7 @@ self::STATUS_REFUSED,        ];
     /**
      * Sets files
      *
-     * @param \Swagger\Client\Model\FileOutput[] $files List of files used in the procedure.
+     * @param \YouSignClient\Model\FileOutput[] $files List of files used in the procedure.
      *
      * @return $this
      */

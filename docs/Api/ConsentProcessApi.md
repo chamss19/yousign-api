@@ -1,4 +1,4 @@
-# Swagger\Client\ConsentProcessApi
+# YouSignClient\ConsentProcessApi
 
 All URIs are relative to *https://api.yousign.com/*
 
@@ -11,7 +11,7 @@ Method | HTTP request | Description
 [**consentProcessesPost**](ConsentProcessApi.md#consentProcessesPost) | **POST** /consent_processes | Create a new Consent Process
 
 # **consentProcessesGet**
-> \Swagger\Client\Model\ConsentProcessOutput[] consentProcessesGet($member, $procedure, $authorization)
+> \YouSignClient\Model\ConsentProcessOutput[] consentProcessesGet($member, $procedure, $authorization)
 
 Get list of Consent Processes
 
@@ -20,7 +20,7 @@ Get list of Consent Processes
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\ConsentProcessApi(
+$apiInstance = new YouSignClient\Api\ConsentProcessApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -48,7 +48,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\ConsentProcessOutput[]**](../Model/ConsentProcessOutput.md)
+[**\YouSignClient\Model\ConsentProcessOutput[]**](../Model/ConsentProcessOutput.md)
 
 ### Authorization
 
@@ -71,7 +71,7 @@ Delete a Consent Process
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\ConsentProcessApi(
+$apiInstance = new YouSignClient\Api\ConsentProcessApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -110,7 +110,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **consentProcessesIdGet**
-> \Swagger\Client\Model\ConsentProcessOutput consentProcessesIdGet($id, $member, $authorization)
+> \YouSignClient\Model\ConsentProcessOutput consentProcessesIdGet($id, $member, $authorization)
 
 Get a Consent Process
 
@@ -119,7 +119,7 @@ Get a Consent Process
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\ConsentProcessApi(
+$apiInstance = new YouSignClient\Api\ConsentProcessApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -147,7 +147,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\ConsentProcessOutput**](../Model/ConsentProcessOutput.md)
+[**\YouSignClient\Model\ConsentProcessOutput**](../Model/ConsentProcessOutput.md)
 
 ### Authorization
 
@@ -161,7 +161,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **consentProcessesIdPut**
-> \Swagger\Client\Model\ConsentProcessOutput consentProcessesIdPut($body, $id, $content_type, $authorization)
+> \YouSignClient\Model\ConsentProcessOutput consentProcessesIdPut($body, $id, $content_type, $authorization)
 
 Update a Consent Process
 
@@ -170,12 +170,12 @@ Update a Consent Process
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\ConsentProcessApi(
+$apiInstance = new YouSignClient\Api\ConsentProcessApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \Swagger\Client\Model\ConsentProcessInput(); // \Swagger\Client\Model\ConsentProcessInput | 
+$body = new \YouSignClient\Model\ConsentProcessInput(); // \YouSignClient\Model\ConsentProcessInput | 
 $id = "id_example"; // string | 
 $content_type = "content_type_example"; // string | The MIME type of the body of the request
 $authorization = "authorization_example"; // string | Authentication credentials for HTTP authentication
@@ -193,14 +193,14 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\ConsentProcessInput**](../Model/ConsentProcessInput.md)|  |
+ **body** | [**\YouSignClient\Model\ConsentProcessInput**](../Model/ConsentProcessInput.md)|  |
  **id** | [**string**](../Model/.md)|  |
  **content_type** | [**string**](../Model/.md)| The MIME type of the body of the request | [optional]
  **authorization** | [**string**](../Model/.md)| Authentication credentials for HTTP authentication | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Model\ConsentProcessOutput**](../Model/ConsentProcessOutput.md)
+[**\YouSignClient\Model\ConsentProcessOutput**](../Model/ConsentProcessOutput.md)
 
 ### Authorization
 
@@ -214,7 +214,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **consentProcessesPost**
-> \Swagger\Client\Model\ConsentProcessOutput consentProcessesPost($body, $content_type, $authorization)
+> \YouSignClient\Model\ConsentProcessOutput consentProcessesPost($body, $content_type, $authorization)
 
 Create a new Consent Process
 
@@ -223,12 +223,12 @@ Create a new Consent Process
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\ConsentProcessApi(
+$apiInstance = new YouSignClient\Api\ConsentProcessApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \Swagger\Client\Model\ConsentProcessInput(); // \Swagger\Client\Model\ConsentProcessInput | 
+$body = new \YouSignClient\Model\ConsentProcessInput(); // \YouSignClient\Model\ConsentProcessInput | 
 $content_type = "content_type_example"; // string | The MIME type of the body of the request
 $authorization = "authorization_example"; // string | Authentication credentials for HTTP authentication
 
@@ -245,13 +245,13 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\ConsentProcessInput**](../Model/ConsentProcessInput.md)|  |
+ **body** | [**\YouSignClient\Model\ConsentProcessInput**](../Model/ConsentProcessInput.md)|  |
  **content_type** | [**string**](../Model/.md)| The MIME type of the body of the request | [optional]
  **authorization** | [**string**](../Model/.md)| Authentication credentials for HTTP authentication | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Model\ConsentProcessOutput**](../Model/ConsentProcessOutput.md)
+[**\YouSignClient\Model\ConsentProcessOutput**](../Model/ConsentProcessOutput.md)
 
 ### Authorization
 

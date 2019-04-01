@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  YouSignClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Api;
+namespace YouSignClient\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -33,16 +33,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Swagger\Client\ApiException;
-use Swagger\Client\Configuration;
-use Swagger\Client\HeaderSelector;
-use Swagger\Client\ObjectSerializer;
+use YouSignClient\ApiException;
+use YouSignClient\Configuration;
+use YouSignClient\HeaderSelector;
+use YouSignClient\ObjectSerializer;
 
 /**
  * MembersApi Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  YouSignClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -93,9 +93,9 @@ class MembersApi
      *
      * @param  string $procedure procedure (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \YouSignClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\MemberOutput[]
+     * @return \YouSignClient\Model\MemberOutput[]
      */
     public function membersGet($procedure = null)
     {
@@ -110,13 +110,13 @@ class MembersApi
      *
      * @param  string $procedure (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \YouSignClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\MemberOutput[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \YouSignClient\Model\MemberOutput[], HTTP status code, HTTP response headers (array of strings)
      */
     public function membersGetWithHttpInfo($procedure = null)
     {
-        $returnType = '\Swagger\Client\Model\MemberOutput[]';
+        $returnType = '\YouSignClient\Model\MemberOutput[]';
         $request = $this->membersGetRequest($procedure);
 
         try {
@@ -168,7 +168,7 @@ class MembersApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\MemberOutput[]',
+                        '\YouSignClient\Model\MemberOutput[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -210,7 +210,7 @@ class MembersApi
      */
     public function membersGetAsyncWithHttpInfo($procedure = null)
     {
-        $returnType = '\Swagger\Client\Model\MemberOutput[]';
+        $returnType = '\YouSignClient\Model\MemberOutput[]';
         $request = $this->membersGetRequest($procedure);
 
         return $this->client
@@ -345,7 +345,7 @@ class MembersApi
      *
      * @param  string $id id (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \YouSignClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -361,7 +361,7 @@ class MembersApi
      *
      * @param  string $id (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \YouSignClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -571,7 +571,7 @@ class MembersApi
      * @param  string $id id (required)
      * @param  string $authorization Authentication credentials for HTTP authentication (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \YouSignClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return string
      */
@@ -589,7 +589,7 @@ class MembersApi
      * @param  string $id (required)
      * @param  string $authorization Authentication credentials for HTTP authentication (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \YouSignClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of string, HTTP status code, HTTP response headers (array of strings)
      */
@@ -845,12 +845,12 @@ class MembersApi
      *
      * Edit a Member
      *
-     * @param  \Swagger\Client\Model\MemberInput $body body (required)
+     * @param  \YouSignClient\Model\MemberInput $body body (required)
      * @param  string $id id (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \YouSignClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\MemberOutput
+     * @return \YouSignClient\Model\MemberOutput
      */
     public function membersIdPut($body, $id)
     {
@@ -863,16 +863,16 @@ class MembersApi
      *
      * Edit a Member
      *
-     * @param  \Swagger\Client\Model\MemberInput $body (required)
+     * @param  \YouSignClient\Model\MemberInput $body (required)
      * @param  string $id (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \YouSignClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\MemberOutput, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \YouSignClient\Model\MemberOutput, HTTP status code, HTTP response headers (array of strings)
      */
     public function membersIdPutWithHttpInfo($body, $id)
     {
-        $returnType = '\Swagger\Client\Model\MemberOutput';
+        $returnType = '\YouSignClient\Model\MemberOutput';
         $request = $this->membersIdPutRequest($body, $id);
 
         try {
@@ -924,7 +924,7 @@ class MembersApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\MemberOutput',
+                        '\YouSignClient\Model\MemberOutput',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -939,7 +939,7 @@ class MembersApi
      *
      * Edit a Member
      *
-     * @param  \Swagger\Client\Model\MemberInput $body (required)
+     * @param  \YouSignClient\Model\MemberInput $body (required)
      * @param  string $id (required)
      *
      * @throws \InvalidArgumentException
@@ -960,7 +960,7 @@ class MembersApi
      *
      * Edit a Member
      *
-     * @param  \Swagger\Client\Model\MemberInput $body (required)
+     * @param  \YouSignClient\Model\MemberInput $body (required)
      * @param  string $id (required)
      *
      * @throws \InvalidArgumentException
@@ -968,7 +968,7 @@ class MembersApi
      */
     public function membersIdPutAsyncWithHttpInfo($body, $id)
     {
-        $returnType = '\Swagger\Client\Model\MemberOutput';
+        $returnType = '\YouSignClient\Model\MemberOutput';
         $request = $this->membersIdPutRequest($body, $id);
 
         return $this->client
@@ -1011,7 +1011,7 @@ class MembersApi
     /**
      * Create request for operation 'membersIdPut'
      *
-     * @param  \Swagger\Client\Model\MemberInput $body (required)
+     * @param  \YouSignClient\Model\MemberInput $body (required)
      * @param  string $id (required)
      *
      * @throws \InvalidArgumentException
@@ -1121,11 +1121,11 @@ class MembersApi
      *
      * Create a new Member
      *
-     * @param  \Swagger\Client\Model\MemberInput $body body (required)
+     * @param  \YouSignClient\Model\MemberInput $body body (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \YouSignClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\MemberOutput
+     * @return \YouSignClient\Model\MemberOutput
      */
     public function membersPost($body)
     {
@@ -1138,15 +1138,15 @@ class MembersApi
      *
      * Create a new Member
      *
-     * @param  \Swagger\Client\Model\MemberInput $body (required)
+     * @param  \YouSignClient\Model\MemberInput $body (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \YouSignClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\MemberOutput, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \YouSignClient\Model\MemberOutput, HTTP status code, HTTP response headers (array of strings)
      */
     public function membersPostWithHttpInfo($body)
     {
-        $returnType = '\Swagger\Client\Model\MemberOutput';
+        $returnType = '\YouSignClient\Model\MemberOutput';
         $request = $this->membersPostRequest($body);
 
         try {
@@ -1198,7 +1198,7 @@ class MembersApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\MemberOutput',
+                        '\YouSignClient\Model\MemberOutput',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1213,7 +1213,7 @@ class MembersApi
      *
      * Create a new Member
      *
-     * @param  \Swagger\Client\Model\MemberInput $body (required)
+     * @param  \YouSignClient\Model\MemberInput $body (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1233,14 +1233,14 @@ class MembersApi
      *
      * Create a new Member
      *
-     * @param  \Swagger\Client\Model\MemberInput $body (required)
+     * @param  \YouSignClient\Model\MemberInput $body (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function membersPostAsyncWithHttpInfo($body)
     {
-        $returnType = '\Swagger\Client\Model\MemberOutput';
+        $returnType = '\YouSignClient\Model\MemberOutput';
         $request = $this->membersPostRequest($body);
 
         return $this->client
@@ -1283,7 +1283,7 @@ class MembersApi
     /**
      * Create request for operation 'membersPost'
      *
-     * @param  \Swagger\Client\Model\MemberInput $body (required)
+     * @param  \YouSignClient\Model\MemberInput $body (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

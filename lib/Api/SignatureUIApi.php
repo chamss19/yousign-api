@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  YouSignClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Api;
+namespace YouSignClient\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -33,16 +33,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Swagger\Client\ApiException;
-use Swagger\Client\Configuration;
-use Swagger\Client\HeaderSelector;
-use Swagger\Client\ObjectSerializer;
+use YouSignClient\ApiException;
+use YouSignClient\Configuration;
+use YouSignClient\HeaderSelector;
+use YouSignClient\ObjectSerializer;
 
 /**
  * SignatureUIApi Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  YouSignClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -94,9 +94,9 @@ class SignatureUIApi
      * @param  string $name Filtering on name of signature ui labels (optional)
      * @param  string $signature_ui Filtering on id of signature ui resource (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \YouSignClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\SignatureUiLabelOutput[]
+     * @return \YouSignClient\Model\SignatureUiLabelOutput[]
      */
     public function signatureUiLabelsGet($name = null, $signature_ui = null)
     {
@@ -112,13 +112,13 @@ class SignatureUIApi
      * @param  string $name Filtering on name of signature ui labels (optional)
      * @param  string $signature_ui Filtering on id of signature ui resource (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \YouSignClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\SignatureUiLabelOutput[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \YouSignClient\Model\SignatureUiLabelOutput[], HTTP status code, HTTP response headers (array of strings)
      */
     public function signatureUiLabelsGetWithHttpInfo($name = null, $signature_ui = null)
     {
-        $returnType = '\Swagger\Client\Model\SignatureUiLabelOutput[]';
+        $returnType = '\YouSignClient\Model\SignatureUiLabelOutput[]';
         $request = $this->signatureUiLabelsGetRequest($name, $signature_ui);
 
         try {
@@ -170,7 +170,7 @@ class SignatureUIApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\SignatureUiLabelOutput[]',
+                        '\YouSignClient\Model\SignatureUiLabelOutput[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -214,7 +214,7 @@ class SignatureUIApi
      */
     public function signatureUiLabelsGetAsyncWithHttpInfo($name = null, $signature_ui = null)
     {
-        $returnType = '\Swagger\Client\Model\SignatureUiLabelOutput[]';
+        $returnType = '\YouSignClient\Model\SignatureUiLabelOutput[]';
         $request = $this->signatureUiLabelsGetRequest($name, $signature_ui);
 
         return $this->client
@@ -355,7 +355,7 @@ class SignatureUIApi
      * @param  string $id id (required)
      * @param  string $id2 Id of signature ui label (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \YouSignClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -372,7 +372,7 @@ class SignatureUIApi
      * @param  string $id (required)
      * @param  string $id2 Id of signature ui label (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \YouSignClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -589,9 +589,9 @@ class SignatureUIApi
      * @param  string $id id (required)
      * @param  string $id2 id of signature ui label (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \YouSignClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\SignatureUiLabelOutput
+     * @return \YouSignClient\Model\SignatureUiLabelOutput
      */
     public function signatureUiLabelsIdGet($id, $id2 = null)
     {
@@ -607,13 +607,13 @@ class SignatureUIApi
      * @param  string $id (required)
      * @param  string $id2 id of signature ui label (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \YouSignClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\SignatureUiLabelOutput, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \YouSignClient\Model\SignatureUiLabelOutput, HTTP status code, HTTP response headers (array of strings)
      */
     public function signatureUiLabelsIdGetWithHttpInfo($id, $id2 = null)
     {
-        $returnType = '\Swagger\Client\Model\SignatureUiLabelOutput';
+        $returnType = '\YouSignClient\Model\SignatureUiLabelOutput';
         $request = $this->signatureUiLabelsIdGetRequest($id, $id2);
 
         try {
@@ -665,7 +665,7 @@ class SignatureUIApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\SignatureUiLabelOutput',
+                        '\YouSignClient\Model\SignatureUiLabelOutput',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -709,7 +709,7 @@ class SignatureUIApi
      */
     public function signatureUiLabelsIdGetAsyncWithHttpInfo($id, $id2 = null)
     {
-        $returnType = '\Swagger\Client\Model\SignatureUiLabelOutput';
+        $returnType = '\YouSignClient\Model\SignatureUiLabelOutput';
         $request = $this->signatureUiLabelsIdGetRequest($id, $id2);
 
         return $this->client
@@ -860,9 +860,9 @@ class SignatureUIApi
      * @param  string $id id (required)
      * @param  string $id2 Id of signature ui labels (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \YouSignClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\SignatureUiLabelOutput
+     * @return \YouSignClient\Model\SignatureUiLabelOutput
      */
     public function signatureUiLabelsIdPut($id, $id2 = null)
     {
@@ -878,13 +878,13 @@ class SignatureUIApi
      * @param  string $id (required)
      * @param  string $id2 Id of signature ui labels (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \YouSignClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\SignatureUiLabelOutput, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \YouSignClient\Model\SignatureUiLabelOutput, HTTP status code, HTTP response headers (array of strings)
      */
     public function signatureUiLabelsIdPutWithHttpInfo($id, $id2 = null)
     {
-        $returnType = '\Swagger\Client\Model\SignatureUiLabelOutput';
+        $returnType = '\YouSignClient\Model\SignatureUiLabelOutput';
         $request = $this->signatureUiLabelsIdPutRequest($id, $id2);
 
         try {
@@ -936,7 +936,7 @@ class SignatureUIApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\SignatureUiLabelOutput',
+                        '\YouSignClient\Model\SignatureUiLabelOutput',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -980,7 +980,7 @@ class SignatureUIApi
      */
     public function signatureUiLabelsIdPutAsyncWithHttpInfo($id, $id2 = null)
     {
-        $returnType = '\Swagger\Client\Model\SignatureUiLabelOutput';
+        $returnType = '\YouSignClient\Model\SignatureUiLabelOutput';
         $request = $this->signatureUiLabelsIdPutRequest($id, $id2);
 
         return $this->client
@@ -1128,11 +1128,11 @@ class SignatureUIApi
      *
      * Create a new Signature UI Label
      *
-     * @param  \Swagger\Client\Model\SignatureUiLabelInput $body body (required)
+     * @param  \YouSignClient\Model\SignatureUiLabelInput $body body (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \YouSignClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\SignatureUiLabelOutput
+     * @return \YouSignClient\Model\SignatureUiLabelOutput
      */
     public function signatureUiLabelsPost($body)
     {
@@ -1145,15 +1145,15 @@ class SignatureUIApi
      *
      * Create a new Signature UI Label
      *
-     * @param  \Swagger\Client\Model\SignatureUiLabelInput $body (required)
+     * @param  \YouSignClient\Model\SignatureUiLabelInput $body (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \YouSignClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\SignatureUiLabelOutput, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \YouSignClient\Model\SignatureUiLabelOutput, HTTP status code, HTTP response headers (array of strings)
      */
     public function signatureUiLabelsPostWithHttpInfo($body)
     {
-        $returnType = '\Swagger\Client\Model\SignatureUiLabelOutput';
+        $returnType = '\YouSignClient\Model\SignatureUiLabelOutput';
         $request = $this->signatureUiLabelsPostRequest($body);
 
         try {
@@ -1205,7 +1205,7 @@ class SignatureUIApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\SignatureUiLabelOutput',
+                        '\YouSignClient\Model\SignatureUiLabelOutput',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1220,7 +1220,7 @@ class SignatureUIApi
      *
      * Create a new Signature UI Label
      *
-     * @param  \Swagger\Client\Model\SignatureUiLabelInput $body (required)
+     * @param  \YouSignClient\Model\SignatureUiLabelInput $body (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1240,14 +1240,14 @@ class SignatureUIApi
      *
      * Create a new Signature UI Label
      *
-     * @param  \Swagger\Client\Model\SignatureUiLabelInput $body (required)
+     * @param  \YouSignClient\Model\SignatureUiLabelInput $body (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function signatureUiLabelsPostAsyncWithHttpInfo($body)
     {
-        $returnType = '\Swagger\Client\Model\SignatureUiLabelOutput';
+        $returnType = '\YouSignClient\Model\SignatureUiLabelOutput';
         $request = $this->signatureUiLabelsPostRequest($body);
 
         return $this->client
@@ -1290,7 +1290,7 @@ class SignatureUIApi
     /**
      * Create request for operation 'signatureUiLabelsPost'
      *
-     * @param  \Swagger\Client\Model\SignatureUiLabelInput $body (required)
+     * @param  \YouSignClient\Model\SignatureUiLabelInput $body (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -1386,9 +1386,9 @@ class SignatureUIApi
      * Get Signature UI list
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \YouSignClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\SignatureUiOutput[]
+     * @return \YouSignClient\Model\SignatureUiOutput[]
      */
     public function signatureUisGet()
     {
@@ -1402,13 +1402,13 @@ class SignatureUIApi
      * Get Signature UI list
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \YouSignClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\SignatureUiOutput[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \YouSignClient\Model\SignatureUiOutput[], HTTP status code, HTTP response headers (array of strings)
      */
     public function signatureUisGetWithHttpInfo()
     {
-        $returnType = '\Swagger\Client\Model\SignatureUiOutput[]';
+        $returnType = '\YouSignClient\Model\SignatureUiOutput[]';
         $request = $this->signatureUisGetRequest();
 
         try {
@@ -1460,7 +1460,7 @@ class SignatureUIApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\SignatureUiOutput[]',
+                        '\YouSignClient\Model\SignatureUiOutput[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1500,7 +1500,7 @@ class SignatureUIApi
      */
     public function signatureUisGetAsyncWithHttpInfo()
     {
-        $returnType = '\Swagger\Client\Model\SignatureUiOutput[]';
+        $returnType = '\YouSignClient\Model\SignatureUiOutput[]';
         $request = $this->signatureUisGetRequest();
 
         return $this->client
@@ -1631,7 +1631,7 @@ class SignatureUIApi
      * @param  string $id id (required)
      * @param  string $id2 Id of the signature ui (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \YouSignClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -1648,7 +1648,7 @@ class SignatureUIApi
      * @param  string $id (required)
      * @param  string $id2 Id of the signature ui (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \YouSignClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -1865,9 +1865,9 @@ class SignatureUIApi
      * @param  string $id id (required)
      * @param  string $id2 id of a signature ui (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \YouSignClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\SignatureUiOutput
+     * @return \YouSignClient\Model\SignatureUiOutput
      */
     public function signatureUisIdGet($id, $id2 = null)
     {
@@ -1883,13 +1883,13 @@ class SignatureUIApi
      * @param  string $id (required)
      * @param  string $id2 id of a signature ui (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \YouSignClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\SignatureUiOutput, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \YouSignClient\Model\SignatureUiOutput, HTTP status code, HTTP response headers (array of strings)
      */
     public function signatureUisIdGetWithHttpInfo($id, $id2 = null)
     {
-        $returnType = '\Swagger\Client\Model\SignatureUiOutput';
+        $returnType = '\YouSignClient\Model\SignatureUiOutput';
         $request = $this->signatureUisIdGetRequest($id, $id2);
 
         try {
@@ -1941,7 +1941,7 @@ class SignatureUIApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\SignatureUiOutput',
+                        '\YouSignClient\Model\SignatureUiOutput',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1985,7 +1985,7 @@ class SignatureUIApi
      */
     public function signatureUisIdGetAsyncWithHttpInfo($id, $id2 = null)
     {
-        $returnType = '\Swagger\Client\Model\SignatureUiOutput';
+        $returnType = '\YouSignClient\Model\SignatureUiOutput';
         $request = $this->signatureUisIdGetRequest($id, $id2);
 
         return $this->client
@@ -2136,9 +2136,9 @@ class SignatureUIApi
      * @param  string $id id (required)
      * @param  string $id2 id of signature ui to update (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \YouSignClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\SignatureUiInputUpdate
+     * @return \YouSignClient\Model\SignatureUiInputUpdate
      */
     public function signatureUisIdPut($id, $id2 = null)
     {
@@ -2154,13 +2154,13 @@ class SignatureUIApi
      * @param  string $id (required)
      * @param  string $id2 id of signature ui to update (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \YouSignClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\SignatureUiInputUpdate, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \YouSignClient\Model\SignatureUiInputUpdate, HTTP status code, HTTP response headers (array of strings)
      */
     public function signatureUisIdPutWithHttpInfo($id, $id2 = null)
     {
-        $returnType = '\Swagger\Client\Model\SignatureUiInputUpdate';
+        $returnType = '\YouSignClient\Model\SignatureUiInputUpdate';
         $request = $this->signatureUisIdPutRequest($id, $id2);
 
         try {
@@ -2212,7 +2212,7 @@ class SignatureUIApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\SignatureUiInputUpdate',
+                        '\YouSignClient\Model\SignatureUiInputUpdate',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2256,7 +2256,7 @@ class SignatureUIApi
      */
     public function signatureUisIdPutAsyncWithHttpInfo($id, $id2 = null)
     {
-        $returnType = '\Swagger\Client\Model\SignatureUiInputUpdate';
+        $returnType = '\YouSignClient\Model\SignatureUiInputUpdate';
         $request = $this->signatureUisIdPutRequest($id, $id2);
 
         return $this->client
@@ -2404,11 +2404,11 @@ class SignatureUIApi
      *
      * Create a new Signature UI
      *
-     * @param  \Swagger\Client\Model\SignatureUiInput $body body (required)
+     * @param  \YouSignClient\Model\SignatureUiInput $body body (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \YouSignClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\SignatureUiOutput
+     * @return \YouSignClient\Model\SignatureUiOutput
      */
     public function signatureUisPost($body)
     {
@@ -2421,15 +2421,15 @@ class SignatureUIApi
      *
      * Create a new Signature UI
      *
-     * @param  \Swagger\Client\Model\SignatureUiInput $body (required)
+     * @param  \YouSignClient\Model\SignatureUiInput $body (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \YouSignClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\SignatureUiOutput, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \YouSignClient\Model\SignatureUiOutput, HTTP status code, HTTP response headers (array of strings)
      */
     public function signatureUisPostWithHttpInfo($body)
     {
-        $returnType = '\Swagger\Client\Model\SignatureUiOutput';
+        $returnType = '\YouSignClient\Model\SignatureUiOutput';
         $request = $this->signatureUisPostRequest($body);
 
         try {
@@ -2481,7 +2481,7 @@ class SignatureUIApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\SignatureUiOutput',
+                        '\YouSignClient\Model\SignatureUiOutput',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2496,7 +2496,7 @@ class SignatureUIApi
      *
      * Create a new Signature UI
      *
-     * @param  \Swagger\Client\Model\SignatureUiInput $body (required)
+     * @param  \YouSignClient\Model\SignatureUiInput $body (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -2516,14 +2516,14 @@ class SignatureUIApi
      *
      * Create a new Signature UI
      *
-     * @param  \Swagger\Client\Model\SignatureUiInput $body (required)
+     * @param  \YouSignClient\Model\SignatureUiInput $body (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function signatureUisPostAsyncWithHttpInfo($body)
     {
-        $returnType = '\Swagger\Client\Model\SignatureUiOutput';
+        $returnType = '\YouSignClient\Model\SignatureUiOutput';
         $request = $this->signatureUisPostRequest($body);
 
         return $this->client
@@ -2566,7 +2566,7 @@ class SignatureUIApi
     /**
      * Create request for operation 'signatureUisPost'
      *
-     * @param  \Swagger\Client\Model\SignatureUiInput $body (required)
+     * @param  \YouSignClient\Model\SignatureUiInput $body (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

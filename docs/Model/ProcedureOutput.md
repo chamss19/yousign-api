@@ -18,9 +18,9 @@ Name | Type | Description | Notes
 **ordered** | **bool** | Defines an order for the procedure process. If true, position of each member will be used to define the validation workflow. | [optional] 
 **parent** | **string** | Id of a procedure template used to get all properties of the template in the new procedure. If you set other properties, they will be replaced. If you don’t set other properties, all properties will be cloned. | [optional] 
 **metadata** | **object** | Metadata of the procedure | [optional] 
-**config** | [**\Swagger\Client\Model\ProcedureConfig**](ProcedureConfig.md) |  | [optional] 
-**members** | [**\Swagger\Client\Model\MemberOutput[]**](MemberOutput.md) |  | [optional] 
-**files** | [**\Swagger\Client\Model\FileOutput[]**](FileOutput.md) | List of files used in the procedure. | [optional] 
+**config** | [**\YouSignClient\Model\ProcedureConfig**](ProcedureConfig.md) |  | [optional] 
+**members** | [**\YouSignClient\Model\MemberOutput[]**](MemberOutput.md) |  | [optional] 
+**files** | [**\YouSignClient\Model\FileOutput[]**](FileOutput.md) | List of files used in the procedure. | [optional] 
 **related_files_enable** | **bool** | Defines if related files are available. | [optional] 
 **archive** | **bool** | Defines if the files of the procedure must be archived (Company should be allowed) | [optional] [default to false]
 

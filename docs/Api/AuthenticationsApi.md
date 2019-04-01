@@ -1,4 +1,4 @@
-# Swagger\Client\AuthenticationsApi
+# YouSignClient\AuthenticationsApi
 
 All URIs are relative to *https://api.yousign.com/*
 
@@ -12,7 +12,7 @@ Method | HTTP request | Description
 [**authenticationsSmsIdPut**](AuthenticationsApi.md#authenticationsSmsIdPut) | **PUT** /authentications/sms/{id} | Update an SMS Authentication
 
 # **authenticationsEmailIdGet**
-> \Swagger\Client\Model\AuthenticationEmailOutput authenticationsEmailIdGet($id, $authorization)
+> \YouSignClient\Model\AuthenticationEmailOutput authenticationsEmailIdGet($id, $authorization)
 
 Find an Authentication by ID
 
@@ -21,7 +21,7 @@ Find an Authentication by ID
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\AuthenticationsApi(
+$apiInstance = new YouSignClient\Api\AuthenticationsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -47,7 +47,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\AuthenticationEmailOutput**](../Model/AuthenticationEmailOutput.md)
+[**\YouSignClient\Model\AuthenticationEmailOutput**](../Model/AuthenticationEmailOutput.md)
 
 ### Authorization
 
@@ -61,7 +61,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **authenticationsEmailIdPut**
-> \Swagger\Client\Model\AuthenticationEmailOutput authenticationsEmailIdPut($body, $authorization, $content_type, $id)
+> \YouSignClient\Model\AuthenticationEmailOutput authenticationsEmailIdPut($body, $authorization, $content_type, $id)
 
 Update an Email Authentication
 
@@ -70,7 +70,7 @@ Update an Email Authentication
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\AuthenticationsApi(
+$apiInstance = new YouSignClient\Api\AuthenticationsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -100,7 +100,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\AuthenticationEmailOutput**](../Model/AuthenticationEmailOutput.md)
+[**\YouSignClient\Model\AuthenticationEmailOutput**](../Model/AuthenticationEmailOutput.md)
 
 ### Authorization
 
@@ -114,7 +114,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **authenticationsInweboIdGet**
-> \Swagger\Client\Model\AuthenticationInweboOutput authenticationsInweboIdGet($id, $authorization)
+> \YouSignClient\Model\AuthenticationInweboOutput authenticationsInweboIdGet($id, $authorization)
 
 Get an Authentication
 
@@ -123,7 +123,7 @@ Get an Authentication
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\AuthenticationsApi(
+$apiInstance = new YouSignClient\Api\AuthenticationsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -149,7 +149,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\AuthenticationInweboOutput**](../Model/AuthenticationInweboOutput.md)
+[**\YouSignClient\Model\AuthenticationInweboOutput**](../Model/AuthenticationInweboOutput.md)
 
 ### Authorization
 
@@ -163,7 +163,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **authenticationsInweboIdPut**
-> \Swagger\Client\Model\AuthenticationInweboOutput authenticationsInweboIdPut($body, $content_type, $authorization, $id)
+> \YouSignClient\Model\AuthenticationInweboOutput authenticationsInweboIdPut($body, $content_type, $authorization, $id)
 
 Update an inwebo Authentication
 
@@ -172,7 +172,7 @@ Update an inwebo Authentication
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\AuthenticationsApi(
+$apiInstance = new YouSignClient\Api\AuthenticationsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -202,7 +202,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\AuthenticationInweboOutput**](../Model/AuthenticationInweboOutput.md)
+[**\YouSignClient\Model\AuthenticationInweboOutput**](../Model/AuthenticationInweboOutput.md)
 
 ### Authorization
 
@@ -216,7 +216,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **authenticationsSmsIdGet**
-> \Swagger\Client\Model\AuthenticationSmsOutput authenticationsSmsIdGet($id, $authorization)
+> \YouSignClient\Model\AuthenticationSmsOutput authenticationsSmsIdGet($id, $authorization)
 
 Find an Authentication by ID
 
@@ -225,7 +225,7 @@ Find an Authentication by ID
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\AuthenticationsApi(
+$apiInstance = new YouSignClient\Api\AuthenticationsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -251,7 +251,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\AuthenticationSmsOutput**](../Model/AuthenticationSmsOutput.md)
+[**\YouSignClient\Model\AuthenticationSmsOutput**](../Model/AuthenticationSmsOutput.md)
 
 ### Authorization
 
@@ -265,7 +265,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **authenticationsSmsIdPut**
-> \Swagger\Client\Model\AuthenticationSmsOutput authenticationsSmsIdPut($body, $authorization, $content_type, $id)
+> \YouSignClient\Model\AuthenticationSmsOutput authenticationsSmsIdPut($body, $authorization, $content_type, $id)
 
 Update an SMS Authentication
 
@@ -274,7 +274,7 @@ Update an SMS Authentication
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\AuthenticationsApi(
+$apiInstance = new YouSignClient\Api\AuthenticationsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -304,7 +304,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\AuthenticationSmsOutput**](../Model/AuthenticationSmsOutput.md)
+[**\YouSignClient\Model\AuthenticationSmsOutput**](../Model/AuthenticationSmsOutput.md)
 
 ### Authorization
 

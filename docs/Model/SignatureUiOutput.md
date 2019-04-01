@@ -19,7 +19,7 @@ Name | Type | Description | Notes
 **sign_image_types_available** | **string[]** | Allow sign images types available for signature. | [optional] 
 **default_language** | **string** | Default language of the view. Must be in \&quot;languages\&quot; field. | [optional] 
 **languages** | **string[]** | Array of allowed languages, use country code | [optional] 
-**labels** | [**\Swagger\Client\Model\SignatureUiLabelOutput[]**](SignatureUiLabelOutput.md) |  | [optional] 
+**labels** | [**\YouSignClient\Model\SignatureUiLabelOutput[]**](SignatureUiLabelOutput.md) |  | [optional] 
 **fonts** | **string[]** | List of fonts to load on the view. (Loaded via google fonts) | [optional] 
 **style** | **string** | CSS for customize the view | [optional] 
 **redirect_cancel** | **object** | Redirection when a procedure is refused | [optional] 

@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  YouSignClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Api;
+namespace YouSignClient\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -33,16 +33,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Swagger\Client\ApiException;
-use Swagger\Client\Configuration;
-use Swagger\Client\HeaderSelector;
-use Swagger\Client\ObjectSerializer;
+use YouSignClient\ApiException;
+use YouSignClient\Configuration;
+use YouSignClient\HeaderSelector;
+use YouSignClient\ObjectSerializer;
 
 /**
  * UserApi Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  YouSignClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -93,9 +93,9 @@ class UserApi
      *
      * @param  string $authorization Authentication credentials for HTTP authentication (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \YouSignClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\UserOutput[]
+     * @return \YouSignClient\Model\UserOutput[]
      */
     public function usersGet($authorization)
     {
@@ -110,13 +110,13 @@ class UserApi
      *
      * @param  string $authorization Authentication credentials for HTTP authentication (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \YouSignClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\UserOutput[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \YouSignClient\Model\UserOutput[], HTTP status code, HTTP response headers (array of strings)
      */
     public function usersGetWithHttpInfo($authorization)
     {
-        $returnType = '\Swagger\Client\Model\UserOutput[]';
+        $returnType = '\YouSignClient\Model\UserOutput[]';
         $request = $this->usersGetRequest($authorization);
 
         try {
@@ -168,7 +168,7 @@ class UserApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\UserOutput[]',
+                        '\YouSignClient\Model\UserOutput[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -210,7 +210,7 @@ class UserApi
      */
     public function usersGetAsyncWithHttpInfo($authorization)
     {
-        $returnType = '\Swagger\Client\Model\UserOutput[]';
+        $returnType = '\YouSignClient\Model\UserOutput[]';
         $request = $this->usersGetRequest($authorization);
 
         return $this->client
@@ -352,7 +352,7 @@ class UserApi
      * @param  string $id id (required)
      * @param  string $authorization Authentication credentials for HTTP authentication (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \YouSignClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -369,7 +369,7 @@ class UserApi
      * @param  string $id (required)
      * @param  string $authorization Authentication credentials for HTTP authentication (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \YouSignClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -592,9 +592,9 @@ class UserApi
      * @param  string $id id (required)
      * @param  string $authorization Authentication credentials for HTTP authentication (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \YouSignClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\UserOutput
+     * @return \YouSignClient\Model\UserOutput
      */
     public function usersIdGet($id, $authorization)
     {
@@ -610,13 +610,13 @@ class UserApi
      * @param  string $id (required)
      * @param  string $authorization Authentication credentials for HTTP authentication (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \YouSignClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\UserOutput, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \YouSignClient\Model\UserOutput, HTTP status code, HTTP response headers (array of strings)
      */
     public function usersIdGetWithHttpInfo($id, $authorization)
     {
-        $returnType = '\Swagger\Client\Model\UserOutput';
+        $returnType = '\YouSignClient\Model\UserOutput';
         $request = $this->usersIdGetRequest($id, $authorization);
 
         try {
@@ -668,7 +668,7 @@ class UserApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\UserOutput',
+                        '\YouSignClient\Model\UserOutput',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -712,7 +712,7 @@ class UserApi
      */
     public function usersIdGetAsyncWithHttpInfo($id, $authorization)
     {
-        $returnType = '\Swagger\Client\Model\UserOutput';
+        $returnType = '\YouSignClient\Model\UserOutput';
         $request = $this->usersIdGetRequest($id, $authorization);
 
         return $this->client
@@ -866,14 +866,14 @@ class UserApi
      *
      * Update a User
      *
-     * @param  \Swagger\Client\Model\UserUpdateInput $body body (required)
+     * @param  \YouSignClient\Model\UserUpdateInput $body body (required)
      * @param  string $content_type The MIME type of the body of the request (required)
      * @param  string $authorization Authentication credentials for HTTP authentication (required)
      * @param  string $id id (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \YouSignClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\UserOutput
+     * @return \YouSignClient\Model\UserOutput
      */
     public function usersIdPut($body, $content_type, $authorization, $id)
     {
@@ -886,18 +886,18 @@ class UserApi
      *
      * Update a User
      *
-     * @param  \Swagger\Client\Model\UserUpdateInput $body (required)
+     * @param  \YouSignClient\Model\UserUpdateInput $body (required)
      * @param  string $content_type The MIME type of the body of the request (required)
      * @param  string $authorization Authentication credentials for HTTP authentication (required)
      * @param  string $id (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \YouSignClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\UserOutput, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \YouSignClient\Model\UserOutput, HTTP status code, HTTP response headers (array of strings)
      */
     public function usersIdPutWithHttpInfo($body, $content_type, $authorization, $id)
     {
-        $returnType = '\Swagger\Client\Model\UserOutput';
+        $returnType = '\YouSignClient\Model\UserOutput';
         $request = $this->usersIdPutRequest($body, $content_type, $authorization, $id);
 
         try {
@@ -949,7 +949,7 @@ class UserApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\UserOutput',
+                        '\YouSignClient\Model\UserOutput',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -964,7 +964,7 @@ class UserApi
      *
      * Update a User
      *
-     * @param  \Swagger\Client\Model\UserUpdateInput $body (required)
+     * @param  \YouSignClient\Model\UserUpdateInput $body (required)
      * @param  string $content_type The MIME type of the body of the request (required)
      * @param  string $authorization Authentication credentials for HTTP authentication (required)
      * @param  string $id (required)
@@ -987,7 +987,7 @@ class UserApi
      *
      * Update a User
      *
-     * @param  \Swagger\Client\Model\UserUpdateInput $body (required)
+     * @param  \YouSignClient\Model\UserUpdateInput $body (required)
      * @param  string $content_type The MIME type of the body of the request (required)
      * @param  string $authorization Authentication credentials for HTTP authentication (required)
      * @param  string $id (required)
@@ -997,7 +997,7 @@ class UserApi
      */
     public function usersIdPutAsyncWithHttpInfo($body, $content_type, $authorization, $id)
     {
-        $returnType = '\Swagger\Client\Model\UserOutput';
+        $returnType = '\YouSignClient\Model\UserOutput';
         $request = $this->usersIdPutRequest($body, $content_type, $authorization, $id);
 
         return $this->client
@@ -1040,7 +1040,7 @@ class UserApi
     /**
      * Create request for operation 'usersIdPut'
      *
-     * @param  \Swagger\Client\Model\UserUpdateInput $body (required)
+     * @param  \YouSignClient\Model\UserUpdateInput $body (required)
      * @param  string $content_type The MIME type of the body of the request (required)
      * @param  string $authorization Authentication credentials for HTTP authentication (required)
      * @param  string $id (required)
@@ -1172,13 +1172,13 @@ class UserApi
      *
      * Create a new User on Yousign application
      *
-     * @param  \Swagger\Client\Model\UserInput $body body (required)
+     * @param  \YouSignClient\Model\UserInput $body body (required)
      * @param  string $content_type The MIME type of the body of the request (required)
      * @param  string $authorization Authentication credentials for HTTP authentication (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \YouSignClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\UserOutput
+     * @return \YouSignClient\Model\UserOutput
      */
     public function usersPost($body, $content_type, $authorization)
     {
@@ -1191,17 +1191,17 @@ class UserApi
      *
      * Create a new User on Yousign application
      *
-     * @param  \Swagger\Client\Model\UserInput $body (required)
+     * @param  \YouSignClient\Model\UserInput $body (required)
      * @param  string $content_type The MIME type of the body of the request (required)
      * @param  string $authorization Authentication credentials for HTTP authentication (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \YouSignClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\UserOutput, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \YouSignClient\Model\UserOutput, HTTP status code, HTTP response headers (array of strings)
      */
     public function usersPostWithHttpInfo($body, $content_type, $authorization)
     {
-        $returnType = '\Swagger\Client\Model\UserOutput';
+        $returnType = '\YouSignClient\Model\UserOutput';
         $request = $this->usersPostRequest($body, $content_type, $authorization);
 
         try {
@@ -1253,7 +1253,7 @@ class UserApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\UserOutput',
+                        '\YouSignClient\Model\UserOutput',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1268,7 +1268,7 @@ class UserApi
      *
      * Create a new User on Yousign application
      *
-     * @param  \Swagger\Client\Model\UserInput $body (required)
+     * @param  \YouSignClient\Model\UserInput $body (required)
      * @param  string $content_type The MIME type of the body of the request (required)
      * @param  string $authorization Authentication credentials for HTTP authentication (required)
      *
@@ -1290,7 +1290,7 @@ class UserApi
      *
      * Create a new User on Yousign application
      *
-     * @param  \Swagger\Client\Model\UserInput $body (required)
+     * @param  \YouSignClient\Model\UserInput $body (required)
      * @param  string $content_type The MIME type of the body of the request (required)
      * @param  string $authorization Authentication credentials for HTTP authentication (required)
      *
@@ -1299,7 +1299,7 @@ class UserApi
      */
     public function usersPostAsyncWithHttpInfo($body, $content_type, $authorization)
     {
-        $returnType = '\Swagger\Client\Model\UserOutput';
+        $returnType = '\YouSignClient\Model\UserOutput';
         $request = $this->usersPostRequest($body, $content_type, $authorization);
 
         return $this->client
@@ -1342,7 +1342,7 @@ class UserApi
     /**
      * Create request for operation 'usersPost'
      *
-     * @param  \Swagger\Client\Model\UserInput $body (required)
+     * @param  \YouSignClient\Model\UserInput $body (required)
      * @param  string $content_type The MIME type of the body of the request (required)
      * @param  string $authorization Authentication credentials for HTTP authentication (required)
      *

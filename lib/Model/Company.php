@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  YouSignClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace YouSignClient\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \YouSignClient\ObjectSerializer;
 
 /**
  * Company Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  YouSignClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -60,7 +60,7 @@ class Company implements ModelInterface, ArrayAccess
 'name' => 'string',
 'logo' => 'string',
 'url' => 'string',
-'config' => '\Swagger\Client\Model\CompanyConfig',
+'config' => '\YouSignClient\Model\CompanyConfig',
 'created_at' => '\DateTime',
 'updated_at' => '\DateTime',
 'procedure_comments_enabled' => 'bool',
@@ -379,7 +379,7 @@ class Company implements ModelInterface, ArrayAccess
     /**
      * Gets config
      *
-     * @return \Swagger\Client\Model\CompanyConfig
+     * @return \YouSignClient\Model\CompanyConfig
      */
     public function getConfig()
     {
@@ -389,7 +389,7 @@ class Company implements ModelInterface, ArrayAccess
     /**
      * Sets config
      *
-     * @param \Swagger\Client\Model\CompanyConfig $config config
+     * @param \YouSignClient\Model\CompanyConfig $config config
      *
      * @return $this
      */

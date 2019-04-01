@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  YouSignClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace YouSignClient\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \YouSignClient\ObjectSerializer;
 
 /**
  * ProcedureConfigWebhook Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  YouSignClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -56,14 +56,14 @@ class ProcedureConfigWebhook implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'procedure_started' => '\Swagger\Client\Model\ConfigWebhookTemplate[]',
-'procedure_finished' => '\Swagger\Client\Model\ConfigWebhookTemplate[]',
-'procedure_refused' => '\Swagger\Client\Model\ConfigWebhookTemplate[]',
-'procedure_expired' => '\Swagger\Client\Model\ConfigWebhookTemplate[]',
-'procedure_deleted' => '\Swagger\Client\Model\ConfigWebhookTemplate[]',
-'member_started' => '\Swagger\Client\Model\ConfigWebhookTemplate[]',
-'member_finished' => '\Swagger\Client\Model\ConfigWebhookTemplate[]',
-'comment_created' => '\Swagger\Client\Model\ConfigWebhookTemplate[]'    ];
+        'procedure_started' => '\YouSignClient\Model\ConfigWebhookTemplate[]',
+'procedure_finished' => '\YouSignClient\Model\ConfigWebhookTemplate[]',
+'procedure_refused' => '\YouSignClient\Model\ConfigWebhookTemplate[]',
+'procedure_expired' => '\YouSignClient\Model\ConfigWebhookTemplate[]',
+'procedure_deleted' => '\YouSignClient\Model\ConfigWebhookTemplate[]',
+'member_started' => '\YouSignClient\Model\ConfigWebhookTemplate[]',
+'member_finished' => '\YouSignClient\Model\ConfigWebhookTemplate[]',
+'comment_created' => '\YouSignClient\Model\ConfigWebhookTemplate[]'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -241,7 +241,7 @@ class ProcedureConfigWebhook implements ModelInterface, ArrayAccess
     /**
      * Gets procedure_started
      *
-     * @return \Swagger\Client\Model\ConfigWebhookTemplate[]
+     * @return \YouSignClient\Model\ConfigWebhookTemplate[]
      */
     public function getProcedureStarted()
     {
@@ -251,7 +251,7 @@ class ProcedureConfigWebhook implements ModelInterface, ArrayAccess
     /**
      * Sets procedure_started
      *
-     * @param \Swagger\Client\Model\ConfigWebhookTemplate[] $procedure_started procedure_started
+     * @param \YouSignClient\Model\ConfigWebhookTemplate[] $procedure_started procedure_started
      *
      * @return $this
      */
@@ -265,7 +265,7 @@ class ProcedureConfigWebhook implements ModelInterface, ArrayAccess
     /**
      * Gets procedure_finished
      *
-     * @return \Swagger\Client\Model\ConfigWebhookTemplate[]
+     * @return \YouSignClient\Model\ConfigWebhookTemplate[]
      */
     public function getProcedureFinished()
     {
@@ -275,7 +275,7 @@ class ProcedureConfigWebhook implements ModelInterface, ArrayAccess
     /**
      * Sets procedure_finished
      *
-     * @param \Swagger\Client\Model\ConfigWebhookTemplate[] $procedure_finished procedure_finished
+     * @param \YouSignClient\Model\ConfigWebhookTemplate[] $procedure_finished procedure_finished
      *
      * @return $this
      */
@@ -289,7 +289,7 @@ class ProcedureConfigWebhook implements ModelInterface, ArrayAccess
     /**
      * Gets procedure_refused
      *
-     * @return \Swagger\Client\Model\ConfigWebhookTemplate[]
+     * @return \YouSignClient\Model\ConfigWebhookTemplate[]
      */
     public function getProcedureRefused()
     {
@@ -299,7 +299,7 @@ class ProcedureConfigWebhook implements ModelInterface, ArrayAccess
     /**
      * Sets procedure_refused
      *
-     * @param \Swagger\Client\Model\ConfigWebhookTemplate[] $procedure_refused procedure_refused
+     * @param \YouSignClient\Model\ConfigWebhookTemplate[] $procedure_refused procedure_refused
      *
      * @return $this
      */
@@ -313,7 +313,7 @@ class ProcedureConfigWebhook implements ModelInterface, ArrayAccess
     /**
      * Gets procedure_expired
      *
-     * @return \Swagger\Client\Model\ConfigWebhookTemplate[]
+     * @return \YouSignClient\Model\ConfigWebhookTemplate[]
      */
     public function getProcedureExpired()
     {
@@ -323,7 +323,7 @@ class ProcedureConfigWebhook implements ModelInterface, ArrayAccess
     /**
      * Sets procedure_expired
      *
-     * @param \Swagger\Client\Model\ConfigWebhookTemplate[] $procedure_expired procedure_expired
+     * @param \YouSignClient\Model\ConfigWebhookTemplate[] $procedure_expired procedure_expired
      *
      * @return $this
      */
@@ -337,7 +337,7 @@ class ProcedureConfigWebhook implements ModelInterface, ArrayAccess
     /**
      * Gets procedure_deleted
      *
-     * @return \Swagger\Client\Model\ConfigWebhookTemplate[]
+     * @return \YouSignClient\Model\ConfigWebhookTemplate[]
      */
     public function getProcedureDeleted()
     {
@@ -347,7 +347,7 @@ class ProcedureConfigWebhook implements ModelInterface, ArrayAccess
     /**
      * Sets procedure_deleted
      *
-     * @param \Swagger\Client\Model\ConfigWebhookTemplate[] $procedure_deleted procedure_deleted
+     * @param \YouSignClient\Model\ConfigWebhookTemplate[] $procedure_deleted procedure_deleted
      *
      * @return $this
      */
@@ -361,7 +361,7 @@ class ProcedureConfigWebhook implements ModelInterface, ArrayAccess
     /**
      * Gets member_started
      *
-     * @return \Swagger\Client\Model\ConfigWebhookTemplate[]
+     * @return \YouSignClient\Model\ConfigWebhookTemplate[]
      */
     public function getMemberStarted()
     {
@@ -371,7 +371,7 @@ class ProcedureConfigWebhook implements ModelInterface, ArrayAccess
     /**
      * Sets member_started
      *
-     * @param \Swagger\Client\Model\ConfigWebhookTemplate[] $member_started member_started
+     * @param \YouSignClient\Model\ConfigWebhookTemplate[] $member_started member_started
      *
      * @return $this
      */
@@ -385,7 +385,7 @@ class ProcedureConfigWebhook implements ModelInterface, ArrayAccess
     /**
      * Gets member_finished
      *
-     * @return \Swagger\Client\Model\ConfigWebhookTemplate[]
+     * @return \YouSignClient\Model\ConfigWebhookTemplate[]
      */
     public function getMemberFinished()
     {
@@ -395,7 +395,7 @@ class ProcedureConfigWebhook implements ModelInterface, ArrayAccess
     /**
      * Sets member_finished
      *
-     * @param \Swagger\Client\Model\ConfigWebhookTemplate[] $member_finished member_finished
+     * @param \YouSignClient\Model\ConfigWebhookTemplate[] $member_finished member_finished
      *
      * @return $this
      */
@@ -409,7 +409,7 @@ class ProcedureConfigWebhook implements ModelInterface, ArrayAccess
     /**
      * Gets comment_created
      *
-     * @return \Swagger\Client\Model\ConfigWebhookTemplate[]
+     * @return \YouSignClient\Model\ConfigWebhookTemplate[]
      */
     public function getCommentCreated()
     {
@@ -419,7 +419,7 @@ class ProcedureConfigWebhook implements ModelInterface, ArrayAccess
     /**
      * Sets comment_created
      *
-     * @param \Swagger\Client\Model\ConfigWebhookTemplate[] $comment_created comment_created
+     * @param \YouSignClient\Model\ConfigWebhookTemplate[] $comment_created comment_created
      *
      * @return $this
      */
