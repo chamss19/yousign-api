@@ -18,11 +18,11 @@ Name | Type | Description | Notes
 **saml_name_id** | **string** | ID of SAML | [optional] 
 **default_sign_image** | **string** | ID of the default sign image. | [optional] 
 **fast_sign** | **bool** | Defines if the fast signature is available for the user on the Yousign application | [optional] 
-**group** | [**\YouSignClient\Model\UserGroup**](UserGroup.md) |  | [optional] 
+**group** | [**\YouSign\Client\Model\UserGroup**](UserGroup.md) |  | [optional] 
 **notifications** | **object** | Defines if the notifications are enable ou disable for entities | [optional] 
 **deleted** | **bool** | Defines if the User is deleted or not | [optional] 
 **deleted_at** | [**\DateTime**](\DateTime.md) | Defines the date where the user has been deleted | [optional] 
-**inwebo_user_request__internal** | [**\YouSignClient\Model\InweboUserRequest**](InweboUserRequest.md) |  | [optional] 
+**inwebo_user_request__internal** | [**\YouSign\Client\Model\InweboUserRequest**](InweboUserRequest.md) |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

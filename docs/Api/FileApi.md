@@ -1,4 +1,4 @@
-# YouSignClient\FileApi
+# YouSign\Client\FileApi
 
 All URIs are relative to *https://api.yousign.com/*
 
@@ -21,7 +21,7 @@ Used to get the base64 content of a file
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new YouSignClient\Api\FileApi(
+$apiInstance = new YouSign\Client\Api\FileApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -61,7 +61,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **filesIdDuplicatePost**
-> \YouSignClient\Model\FileOutput filesIdDuplicatePost($id, $authorization)
+> \YouSign\Client\Model\FileOutput filesIdDuplicatePost($id, $authorization)
 
 Duplicate a File
 
@@ -72,7 +72,7 @@ Duplicate a file. It will be create a clone of this file, with a new ID.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new YouSignClient\Api\FileApi(
+$apiInstance = new YouSign\Client\Api\FileApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -98,7 +98,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\YouSignClient\Model\FileOutput**](../Model/FileOutput.md)
+[**\YouSign\Client\Model\FileOutput**](../Model/FileOutput.md)
 
 ### Authorization
 
@@ -112,7 +112,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **filesIdGet**
-> \YouSignClient\Model\FileOutput filesIdGet($id, $authorization)
+> \YouSign\Client\Model\FileOutput filesIdGet($id, $authorization)
 
 Find a File by ID
 
@@ -123,7 +123,7 @@ Returns all the information regarding the File but without its content (for perf
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new YouSignClient\Api\FileApi(
+$apiInstance = new YouSign\Client\Api\FileApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -149,7 +149,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\YouSignClient\Model\FileOutput**](../Model/FileOutput.md)
+[**\YouSign\Client\Model\FileOutput**](../Model/FileOutput.md)
 
 ### Authorization
 
@@ -163,7 +163,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **filesPost**
-> \YouSignClient\Model\FileOutput filesPost($body, $content_type, $authorization)
+> \YouSign\Client\Model\FileOutput filesPost($body, $content_type, $authorization)
 
 Create a new File
 
@@ -174,12 +174,12 @@ Used to upload a file in base64 on our platform
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new YouSignClient\Api\FileApi(
+$apiInstance = new YouSign\Client\Api\FileApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \YouSignClient\Model\FileInput(); // \YouSignClient\Model\FileInput | 
+$body = new \YouSign\Client\Model\FileInput(); // \YouSign\Client\Model\FileInput | 
 $content_type = "content_type_example"; // string | The MIME type of the body of the request
 $authorization = "authorization_example"; // string | Authentication credentials for HTTP authentication
 
@@ -196,13 +196,13 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\YouSignClient\Model\FileInput**](../Model/FileInput.md)|  |
+ **body** | [**\YouSign\Client\Model\FileInput**](../Model/FileInput.md)|  |
  **content_type** | [**string**](../Model/.md)| The MIME type of the body of the request |
  **authorization** | [**string**](../Model/.md)| Authentication credentials for HTTP authentication |
 
 ### Return type
 
-[**\YouSignClient\Model\FileOutput**](../Model/FileOutput.md)
+[**\YouSign\Client\Model\FileOutput**](../Model/FileOutput.md)
 
 ### Authorization
 

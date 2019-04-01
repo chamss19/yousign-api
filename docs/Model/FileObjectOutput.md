@@ -4,7 +4,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **id** | **string** | Id of the object | [optional] 
-**file** | [**\YouSignClient\Model\FileOutput**](FileOutput.md) |  | 
+**file** | [**\YouSign\Client\Model\FileOutput**](FileOutput.md) |  | 
 **page** | **int** | Page of the visible signature. This property is ignored if fieldName is set. If you want a visible signature, you must set page, position and fieldName. | [optional] 
 **position** | **string** | Coordinates of the signature image to set. Format is : “llx,lly,urx,ury”. llx&#x3D;left lower x coordinate, lly&#x3D;left lower y coordinate, urx&#x3D;upper right x coordinate, ury &#x3D; upper right y coordinate. To get easily coordinates, you could use this tool : http://placeit.yousign.fr | [optional] 
 **field_name** | **string** | Name of the signature field existing in the document | [optional] 

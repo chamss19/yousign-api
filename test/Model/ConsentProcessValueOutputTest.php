@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  YouSignClient
+ * @package  YouSign\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,14 +26,14 @@
  * Please update the test case below to test the model.
  */
 
-namespace YouSignClient;
+namespace YouSign\Client;
 
 /**
  * ConsentProcessValueOutputTest Class Doc Comment
  *
  * @category    Class
  * @description ConsentProcessValueOutput
- * @package     YouSignClient
+ * @package     YouSign\Client
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */

@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  YouSignClient
+ * @package  YouSign\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace YouSignClient\Model;
+namespace YouSign\Client\Model;
 
 use \ArrayAccess;
-use \YouSignClient\ObjectSerializer;
+use \YouSign\Client\ObjectSerializer;
 
 /**
  * ProcedureInput Class Doc Comment
  *
  * @category Class
- * @package  YouSignClient
+ * @package  YouSign\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -62,8 +62,8 @@ class ProcedureInput implements ModelInterface, ArrayAccess
 'template' => 'bool',
 'ordered' => 'bool',
 'metadata' => 'object',
-'config' => '\YouSignClient\Model\ProcedureConfig',
-'members' => '\YouSignClient\Model\MemberInput[]',
+'config' => '\YouSign\Client\Model\ProcedureConfig',
+'members' => '\YouSign\Client\Model\MemberInput[]',
 'start' => 'bool',
 'related_files_enable' => 'bool',
 'archive' => 'bool'    ];
@@ -403,7 +403,7 @@ class ProcedureInput implements ModelInterface, ArrayAccess
     /**
      * Gets config
      *
-     * @return \YouSignClient\Model\ProcedureConfig
+     * @return \YouSign\Client\Model\ProcedureConfig
      */
     public function getConfig()
     {
@@ -413,7 +413,7 @@ class ProcedureInput implements ModelInterface, ArrayAccess
     /**
      * Sets config
      *
-     * @param \YouSignClient\Model\ProcedureConfig $config config
+     * @param \YouSign\Client\Model\ProcedureConfig $config config
      *
      * @return $this
      */
@@ -427,7 +427,7 @@ class ProcedureInput implements ModelInterface, ArrayAccess
     /**
      * Gets members
      *
-     * @return \YouSignClient\Model\MemberInput[]
+     * @return \YouSign\Client\Model\MemberInput[]
      */
     public function getMembers()
     {
@@ -437,7 +437,7 @@ class ProcedureInput implements ModelInterface, ArrayAccess
     /**
      * Sets members
      *
-     * @param \YouSignClient\Model\MemberInput[] $members List of members, REQUIRED if start field is true.
+     * @param \YouSign\Client\Model\MemberInput[] $members List of members, REQUIRED if start field is true.
      *
      * @return $this
      */

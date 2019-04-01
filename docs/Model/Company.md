@@ -7,7 +7,7 @@ Name | Type | Description | Notes
 **name** | **string** | Company name | [optional] 
 **logo** | **string** | Company logo | [optional] 
 **url** | **string** | Custom URL for the Company (internal usage only, should not be used) | [optional] 
-**config** | [**\YouSignClient\Model\CompanyConfig**](CompanyConfig.md) |  | [optional] 
+**config** | [**\YouSign\Client\Model\CompanyConfig**](CompanyConfig.md) |  | [optional] 
 **created_at** | [**\DateTime**](\DateTime.md) | Created date of the object | [optional] 
 **updated_at** | [**\DateTime**](\DateTime.md) | Updated date of the object | [optional] 
 **procedure_comments_enabled** | **bool** | Define if comments are available for the company. | [optional] 

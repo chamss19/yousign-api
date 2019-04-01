@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  YouSignClient
+ * @package  YouSign\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace YouSignClient\Model;
+namespace YouSign\Client\Model;
 
 use \ArrayAccess;
-use \YouSignClient\ObjectSerializer;
+use \YouSign\Client\ObjectSerializer;
 
 /**
  * MemberInput Class Doc Comment
  *
  * @category Class
- * @package  YouSignClient
+ * @package  YouSign\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -63,11 +63,11 @@ class MemberInput implements ModelInterface, ArrayAccess
 'email' => 'string',
 'phone' => 'string',
 'position' => 'int',
-'file_objects' => '\YouSignClient\Model\FileObjectInput[]',
+'file_objects' => '\YouSign\Client\Model\FileObjectInput[]',
 'procedure' => 'string',
 'operation_level' => 'string',
 'operation_custom_modes' => 'string[]',
-'mode_sms_configuration' => '\YouSignClient\Model\ModeSmsConfiguration'    ];
+'mode_sms_configuration' => '\YouSign\Client\Model\ModeSmsConfiguration'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -499,7 +499,7 @@ self::OPERATION_CUSTOM_MODES_EMAIL,        ];
     /**
      * Gets file_objects
      *
-     * @return \YouSignClient\Model\FileObjectInput[]
+     * @return \YouSign\Client\Model\FileObjectInput[]
      */
     public function getFileObjects()
     {
@@ -509,7 +509,7 @@ self::OPERATION_CUSTOM_MODES_EMAIL,        ];
     /**
      * Sets file_objects
      *
-     * @param \YouSignClient\Model\FileObjectInput[] $file_objects file_objects
+     * @param \YouSign\Client\Model\FileObjectInput[] $file_objects file_objects
      *
      * @return $this
      */
@@ -613,7 +613,7 @@ self::OPERATION_CUSTOM_MODES_EMAIL,        ];
     /**
      * Gets mode_sms_configuration
      *
-     * @return \YouSignClient\Model\ModeSmsConfiguration
+     * @return \YouSign\Client\Model\ModeSmsConfiguration
      */
     public function getModeSmsConfiguration()
     {
@@ -623,7 +623,7 @@ self::OPERATION_CUSTOM_MODES_EMAIL,        ];
     /**
      * Sets mode_sms_configuration
      *
-     * @param \YouSignClient\Model\ModeSmsConfiguration $mode_sms_configuration mode_sms_configuration
+     * @param \YouSign\Client\Model\ModeSmsConfiguration $mode_sms_configuration mode_sms_configuration
      *
      * @return $this
      */

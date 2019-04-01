@@ -1,4 +1,4 @@
-# YouSignClient\UserApi
+# YouSign\Client\UserApi
 
 All URIs are relative to *https://api.yousign.com/*
 
@@ -11,7 +11,7 @@ Method | HTTP request | Description
 [**usersPost**](UserApi.md#usersPost) | **POST** /users | Create a new User on Yousign application
 
 # **usersGet**
-> \YouSignClient\Model\UserOutput[] usersGet($authorization)
+> \YouSign\Client\Model\UserOutput[] usersGet($authorization)
 
 List all Users
 
@@ -20,7 +20,7 @@ List all Users
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new YouSignClient\Api\UserApi(
+$apiInstance = new YouSign\Client\Api\UserApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -44,7 +44,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\YouSignClient\Model\UserOutput[]**](../Model/UserOutput.md)
+[**\YouSign\Client\Model\UserOutput[]**](../Model/UserOutput.md)
 
 ### Authorization
 
@@ -67,7 +67,7 @@ Delete a User
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new YouSignClient\Api\UserApi(
+$apiInstance = new YouSign\Client\Api\UserApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -106,7 +106,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **usersIdGet**
-> \YouSignClient\Model\UserOutput usersIdGet($id, $authorization)
+> \YouSign\Client\Model\UserOutput usersIdGet($id, $authorization)
 
 Find a User by ID
 
@@ -115,7 +115,7 @@ Find a User by ID
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new YouSignClient\Api\UserApi(
+$apiInstance = new YouSign\Client\Api\UserApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -141,7 +141,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\YouSignClient\Model\UserOutput**](../Model/UserOutput.md)
+[**\YouSign\Client\Model\UserOutput**](../Model/UserOutput.md)
 
 ### Authorization
 
@@ -155,7 +155,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **usersIdPut**
-> \YouSignClient\Model\UserOutput usersIdPut($body, $content_type, $authorization, $id)
+> \YouSign\Client\Model\UserOutput usersIdPut($body, $content_type, $authorization, $id)
 
 Update a User
 
@@ -164,12 +164,12 @@ Update a User
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new YouSignClient\Api\UserApi(
+$apiInstance = new YouSign\Client\Api\UserApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \YouSignClient\Model\UserUpdateInput(); // \YouSignClient\Model\UserUpdateInput | 
+$body = new \YouSign\Client\Model\UserUpdateInput(); // \YouSign\Client\Model\UserUpdateInput | 
 $content_type = "content_type_example"; // string | The MIME type of the body of the request
 $authorization = "authorization_example"; // string | Authentication credentials for HTTP authentication
 $id = "id_example"; // string | 
@@ -187,14 +187,14 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\YouSignClient\Model\UserUpdateInput**](../Model/UserUpdateInput.md)|  |
+ **body** | [**\YouSign\Client\Model\UserUpdateInput**](../Model/UserUpdateInput.md)|  |
  **content_type** | [**string**](../Model/.md)| The MIME type of the body of the request |
  **authorization** | [**string**](../Model/.md)| Authentication credentials for HTTP authentication |
  **id** | [**string**](../Model/.md)|  |
 
 ### Return type
 
-[**\YouSignClient\Model\UserOutput**](../Model/UserOutput.md)
+[**\YouSign\Client\Model\UserOutput**](../Model/UserOutput.md)
 
 ### Authorization
 
@@ -208,7 +208,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **usersPost**
-> \YouSignClient\Model\UserOutput usersPost($body, $content_type, $authorization)
+> \YouSign\Client\Model\UserOutput usersPost($body, $content_type, $authorization)
 
 Create a new User on Yousign application
 
@@ -217,12 +217,12 @@ Create a new User on Yousign application
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new YouSignClient\Api\UserApi(
+$apiInstance = new YouSign\Client\Api\UserApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \YouSignClient\Model\UserInput(); // \YouSignClient\Model\UserInput | 
+$body = new \YouSign\Client\Model\UserInput(); // \YouSign\Client\Model\UserInput | 
 $content_type = "content_type_example"; // string | The MIME type of the body of the request
 $authorization = "authorization_example"; // string | Authentication credentials for HTTP authentication
 
@@ -239,13 +239,13 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\YouSignClient\Model\UserInput**](../Model/UserInput.md)|  |
+ **body** | [**\YouSign\Client\Model\UserInput**](../Model/UserInput.md)|  |
  **content_type** | [**string**](../Model/.md)| The MIME type of the body of the request |
  **authorization** | [**string**](../Model/.md)| Authentication credentials for HTTP authentication |
 
 ### Return type
 
-[**\YouSignClient\Model\UserOutput**](../Model/UserOutput.md)
+[**\YouSign\Client\Model\UserOutput**](../Model/UserOutput.md)
 
 ### Authorization
 

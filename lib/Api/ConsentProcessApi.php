@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  YouSignClient
+ * @package  YouSign\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace YouSignClient\Api;
+namespace YouSign\Client\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -33,16 +33,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use YouSignClient\ApiException;
-use YouSignClient\Configuration;
-use YouSignClient\HeaderSelector;
-use YouSignClient\ObjectSerializer;
+use YouSign\Client\ApiException;
+use YouSign\Client\Configuration;
+use YouSign\Client\HeaderSelector;
+use YouSign\Client\ObjectSerializer;
 
 /**
  * ConsentProcessApi Class Doc Comment
  *
  * @category Class
- * @package  YouSignClient
+ * @package  YouSign\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -95,9 +95,9 @@ class ConsentProcessApi
      * @param  string $procedure id of procedure (required if the member attribut is not set) (optional)
      * @param  string $authorization Authentication credentials for HTTP authentication (optional)
      *
-     * @throws \YouSignClient\ApiException on non-2xx response
+     * @throws \YouSign\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \YouSignClient\Model\ConsentProcessOutput[]
+     * @return \YouSign\Client\Model\ConsentProcessOutput[]
      */
     public function consentProcessesGet($member = null, $procedure = null, $authorization = null)
     {
@@ -114,13 +114,13 @@ class ConsentProcessApi
      * @param  string $procedure id of procedure (required if the member attribut is not set) (optional)
      * @param  string $authorization Authentication credentials for HTTP authentication (optional)
      *
-     * @throws \YouSignClient\ApiException on non-2xx response
+     * @throws \YouSign\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \YouSignClient\Model\ConsentProcessOutput[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \YouSign\Client\Model\ConsentProcessOutput[], HTTP status code, HTTP response headers (array of strings)
      */
     public function consentProcessesGetWithHttpInfo($member = null, $procedure = null, $authorization = null)
     {
-        $returnType = '\YouSignClient\Model\ConsentProcessOutput[]';
+        $returnType = '\YouSign\Client\Model\ConsentProcessOutput[]';
         $request = $this->consentProcessesGetRequest($member, $procedure, $authorization);
 
         try {
@@ -172,7 +172,7 @@ class ConsentProcessApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\YouSignClient\Model\ConsentProcessOutput[]',
+                        '\YouSign\Client\Model\ConsentProcessOutput[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -218,7 +218,7 @@ class ConsentProcessApi
      */
     public function consentProcessesGetAsyncWithHttpInfo($member = null, $procedure = null, $authorization = null)
     {
-        $returnType = '\YouSignClient\Model\ConsentProcessOutput[]';
+        $returnType = '\YouSign\Client\Model\ConsentProcessOutput[]';
         $request = $this->consentProcessesGetRequest($member, $procedure, $authorization);
 
         return $this->client
@@ -364,7 +364,7 @@ class ConsentProcessApi
      * @param  string $id id (required)
      * @param  string $authorization Authentication credentials for HTTP authentication (optional)
      *
-     * @throws \YouSignClient\ApiException on non-2xx response
+     * @throws \YouSign\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -381,7 +381,7 @@ class ConsentProcessApi
      * @param  string $id (required)
      * @param  string $authorization Authentication credentials for HTTP authentication (optional)
      *
-     * @throws \YouSignClient\ApiException on non-2xx response
+     * @throws \YouSign\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -599,9 +599,9 @@ class ConsentProcessApi
      * @param  string $member id of member (required for anonymous) (optional)
      * @param  string $authorization Authentication credentials for HTTP authentication (optional)
      *
-     * @throws \YouSignClient\ApiException on non-2xx response
+     * @throws \YouSign\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \YouSignClient\Model\ConsentProcessOutput
+     * @return \YouSign\Client\Model\ConsentProcessOutput
      */
     public function consentProcessesIdGet($id, $member = null, $authorization = null)
     {
@@ -618,13 +618,13 @@ class ConsentProcessApi
      * @param  string $member id of member (required for anonymous) (optional)
      * @param  string $authorization Authentication credentials for HTTP authentication (optional)
      *
-     * @throws \YouSignClient\ApiException on non-2xx response
+     * @throws \YouSign\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \YouSignClient\Model\ConsentProcessOutput, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \YouSign\Client\Model\ConsentProcessOutput, HTTP status code, HTTP response headers (array of strings)
      */
     public function consentProcessesIdGetWithHttpInfo($id, $member = null, $authorization = null)
     {
-        $returnType = '\YouSignClient\Model\ConsentProcessOutput';
+        $returnType = '\YouSign\Client\Model\ConsentProcessOutput';
         $request = $this->consentProcessesIdGetRequest($id, $member, $authorization);
 
         try {
@@ -676,7 +676,7 @@ class ConsentProcessApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\YouSignClient\Model\ConsentProcessOutput',
+                        '\YouSign\Client\Model\ConsentProcessOutput',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -722,7 +722,7 @@ class ConsentProcessApi
      */
     public function consentProcessesIdGetAsyncWithHttpInfo($id, $member = null, $authorization = null)
     {
-        $returnType = '\YouSignClient\Model\ConsentProcessOutput';
+        $returnType = '\YouSign\Client\Model\ConsentProcessOutput';
         $request = $this->consentProcessesIdGetRequest($id, $member, $authorization);
 
         return $this->client
@@ -875,14 +875,14 @@ class ConsentProcessApi
      *
      * Update a Consent Process
      *
-     * @param  \YouSignClient\Model\ConsentProcessInput $body body (required)
+     * @param  \YouSign\Client\Model\ConsentProcessInput $body body (required)
      * @param  string $id id (required)
      * @param  string $content_type The MIME type of the body of the request (optional)
      * @param  string $authorization Authentication credentials for HTTP authentication (optional)
      *
-     * @throws \YouSignClient\ApiException on non-2xx response
+     * @throws \YouSign\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \YouSignClient\Model\ConsentProcessOutput
+     * @return \YouSign\Client\Model\ConsentProcessOutput
      */
     public function consentProcessesIdPut($body, $id, $content_type = null, $authorization = null)
     {
@@ -895,18 +895,18 @@ class ConsentProcessApi
      *
      * Update a Consent Process
      *
-     * @param  \YouSignClient\Model\ConsentProcessInput $body (required)
+     * @param  \YouSign\Client\Model\ConsentProcessInput $body (required)
      * @param  string $id (required)
      * @param  string $content_type The MIME type of the body of the request (optional)
      * @param  string $authorization Authentication credentials for HTTP authentication (optional)
      *
-     * @throws \YouSignClient\ApiException on non-2xx response
+     * @throws \YouSign\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \YouSignClient\Model\ConsentProcessOutput, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \YouSign\Client\Model\ConsentProcessOutput, HTTP status code, HTTP response headers (array of strings)
      */
     public function consentProcessesIdPutWithHttpInfo($body, $id, $content_type = null, $authorization = null)
     {
-        $returnType = '\YouSignClient\Model\ConsentProcessOutput';
+        $returnType = '\YouSign\Client\Model\ConsentProcessOutput';
         $request = $this->consentProcessesIdPutRequest($body, $id, $content_type, $authorization);
 
         try {
@@ -958,7 +958,7 @@ class ConsentProcessApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\YouSignClient\Model\ConsentProcessOutput',
+                        '\YouSign\Client\Model\ConsentProcessOutput',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -973,7 +973,7 @@ class ConsentProcessApi
      *
      * Update a Consent Process
      *
-     * @param  \YouSignClient\Model\ConsentProcessInput $body (required)
+     * @param  \YouSign\Client\Model\ConsentProcessInput $body (required)
      * @param  string $id (required)
      * @param  string $content_type The MIME type of the body of the request (optional)
      * @param  string $authorization Authentication credentials for HTTP authentication (optional)
@@ -996,7 +996,7 @@ class ConsentProcessApi
      *
      * Update a Consent Process
      *
-     * @param  \YouSignClient\Model\ConsentProcessInput $body (required)
+     * @param  \YouSign\Client\Model\ConsentProcessInput $body (required)
      * @param  string $id (required)
      * @param  string $content_type The MIME type of the body of the request (optional)
      * @param  string $authorization Authentication credentials for HTTP authentication (optional)
@@ -1006,7 +1006,7 @@ class ConsentProcessApi
      */
     public function consentProcessesIdPutAsyncWithHttpInfo($body, $id, $content_type = null, $authorization = null)
     {
-        $returnType = '\YouSignClient\Model\ConsentProcessOutput';
+        $returnType = '\YouSign\Client\Model\ConsentProcessOutput';
         $request = $this->consentProcessesIdPutRequest($body, $id, $content_type, $authorization);
 
         return $this->client
@@ -1049,7 +1049,7 @@ class ConsentProcessApi
     /**
      * Create request for operation 'consentProcessesIdPut'
      *
-     * @param  \YouSignClient\Model\ConsentProcessInput $body (required)
+     * @param  \YouSign\Client\Model\ConsentProcessInput $body (required)
      * @param  string $id (required)
      * @param  string $content_type The MIME type of the body of the request (optional)
      * @param  string $authorization Authentication credentials for HTTP authentication (optional)
@@ -1169,13 +1169,13 @@ class ConsentProcessApi
      *
      * Create a new Consent Process
      *
-     * @param  \YouSignClient\Model\ConsentProcessInput $body body (required)
+     * @param  \YouSign\Client\Model\ConsentProcessInput $body body (required)
      * @param  string $content_type The MIME type of the body of the request (optional)
      * @param  string $authorization Authentication credentials for HTTP authentication (optional)
      *
-     * @throws \YouSignClient\ApiException on non-2xx response
+     * @throws \YouSign\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \YouSignClient\Model\ConsentProcessOutput
+     * @return \YouSign\Client\Model\ConsentProcessOutput
      */
     public function consentProcessesPost($body, $content_type = null, $authorization = null)
     {
@@ -1188,17 +1188,17 @@ class ConsentProcessApi
      *
      * Create a new Consent Process
      *
-     * @param  \YouSignClient\Model\ConsentProcessInput $body (required)
+     * @param  \YouSign\Client\Model\ConsentProcessInput $body (required)
      * @param  string $content_type The MIME type of the body of the request (optional)
      * @param  string $authorization Authentication credentials for HTTP authentication (optional)
      *
-     * @throws \YouSignClient\ApiException on non-2xx response
+     * @throws \YouSign\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \YouSignClient\Model\ConsentProcessOutput, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \YouSign\Client\Model\ConsentProcessOutput, HTTP status code, HTTP response headers (array of strings)
      */
     public function consentProcessesPostWithHttpInfo($body, $content_type = null, $authorization = null)
     {
-        $returnType = '\YouSignClient\Model\ConsentProcessOutput';
+        $returnType = '\YouSign\Client\Model\ConsentProcessOutput';
         $request = $this->consentProcessesPostRequest($body, $content_type, $authorization);
 
         try {
@@ -1250,7 +1250,7 @@ class ConsentProcessApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\YouSignClient\Model\ConsentProcessOutput',
+                        '\YouSign\Client\Model\ConsentProcessOutput',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1265,7 +1265,7 @@ class ConsentProcessApi
      *
      * Create a new Consent Process
      *
-     * @param  \YouSignClient\Model\ConsentProcessInput $body (required)
+     * @param  \YouSign\Client\Model\ConsentProcessInput $body (required)
      * @param  string $content_type The MIME type of the body of the request (optional)
      * @param  string $authorization Authentication credentials for HTTP authentication (optional)
      *
@@ -1287,7 +1287,7 @@ class ConsentProcessApi
      *
      * Create a new Consent Process
      *
-     * @param  \YouSignClient\Model\ConsentProcessInput $body (required)
+     * @param  \YouSign\Client\Model\ConsentProcessInput $body (required)
      * @param  string $content_type The MIME type of the body of the request (optional)
      * @param  string $authorization Authentication credentials for HTTP authentication (optional)
      *
@@ -1296,7 +1296,7 @@ class ConsentProcessApi
      */
     public function consentProcessesPostAsyncWithHttpInfo($body, $content_type = null, $authorization = null)
     {
-        $returnType = '\YouSignClient\Model\ConsentProcessOutput';
+        $returnType = '\YouSign\Client\Model\ConsentProcessOutput';
         $request = $this->consentProcessesPostRequest($body, $content_type, $authorization);
 
         return $this->client
@@ -1339,7 +1339,7 @@ class ConsentProcessApi
     /**
      * Create request for operation 'consentProcessesPost'
      *
-     * @param  \YouSignClient\Model\ConsentProcessInput $body (required)
+     * @param  \YouSign\Client\Model\ConsentProcessInput $body (required)
      * @param  string $content_type The MIME type of the body of the request (optional)
      * @param  string $authorization Authentication credentials for HTTP authentication (optional)
      *

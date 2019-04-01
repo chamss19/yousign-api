@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  YouSignClient
+ * @package  YouSign\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace YouSignClient\Model;
+namespace YouSign\Client\Model;
 
 use \ArrayAccess;
-use \YouSignClient\ObjectSerializer;
+use \YouSign\Client\ObjectSerializer;
 
 /**
  * ServerStampConfig Class Doc Comment
  *
  * @category Class
- * @package  YouSignClient
+ * @package  YouSign\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -56,7 +56,7 @@ class ServerStampConfig implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'webhook' => '\YouSignClient\Model\ServerStampConfigWebhook'    ];
+        'webhook' => '\YouSign\Client\Model\ServerStampConfigWebhook'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -199,7 +199,7 @@ class ServerStampConfig implements ModelInterface, ArrayAccess
     /**
      * Gets webhook
      *
-     * @return \YouSignClient\Model\ServerStampConfigWebhook
+     * @return \YouSign\Client\Model\ServerStampConfigWebhook
      */
     public function getWebhook()
     {
@@ -209,7 +209,7 @@ class ServerStampConfig implements ModelInterface, ArrayAccess
     /**
      * Sets webhook
      *
-     * @param \YouSignClient\Model\ServerStampConfigWebhook $webhook webhook
+     * @param \YouSign\Client\Model\ServerStampConfigWebhook $webhook webhook
      *
      * @return $this
      */

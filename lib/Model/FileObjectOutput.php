@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  YouSignClient
+ * @package  YouSign\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace YouSignClient\Model;
+namespace YouSign\Client\Model;
 
 use \ArrayAccess;
-use \YouSignClient\ObjectSerializer;
+use \YouSign\Client\ObjectSerializer;
 
 /**
  * FileObjectOutput Class Doc Comment
  *
  * @category Class
- * @package  YouSignClient
+ * @package  YouSign\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -57,7 +57,7 @@ class FileObjectOutput implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'id' => 'string',
-'file' => '\YouSignClient\Model\FileOutput',
+'file' => '\YouSign\Client\Model\FileOutput',
 'page' => 'int',
 'position' => 'string',
 'field_name' => 'string',
@@ -286,7 +286,7 @@ class FileObjectOutput implements ModelInterface, ArrayAccess
     /**
      * Gets file
      *
-     * @return \YouSignClient\Model\FileOutput
+     * @return \YouSign\Client\Model\FileOutput
      */
     public function getFile()
     {
@@ -296,7 +296,7 @@ class FileObjectOutput implements ModelInterface, ArrayAccess
     /**
      * Sets file
      *
-     * @param \YouSignClient\Model\FileOutput $file file
+     * @param \YouSign\Client\Model\FileOutput $file file
      *
      * @return $this
      */

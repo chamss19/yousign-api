@@ -14,12 +14,12 @@ Name | Type | Description | Notes
 **created_at** | [**\DateTime**](\DateTime.md) |  | [optional] 
 **updated_at** | [**\DateTime**](\DateTime.md) |  | [optional] 
 **status** | **string** |  | [optional] 
-**file_objects** | [**\YouSignClient\Model\FileObjectOutput[]**](FileObjectOutput.md) |  | [optional] 
+**file_objects** | [**\YouSign\Client\Model\FileObjectOutput[]**](FileObjectOutput.md) |  | [optional] 
 **comment** | **string** | Comment of a member when he refuses a signature | [optional] 
 **procedure** | **string** | Procedure id reference | [optional] 
 **operation_level** | **string** |  | [optional] 
 **operation_custom_modes** | **string[]** |  | [optional] 
-**mode_sms_configuration** | [**\YouSignClient\Model\ModeSmsConfiguration**](ModeSmsConfiguration.md) |  | [optional] 
+**mode_sms_configuration** | [**\YouSign\Client\Model\ModeSmsConfiguration**](ModeSmsConfiguration.md) |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

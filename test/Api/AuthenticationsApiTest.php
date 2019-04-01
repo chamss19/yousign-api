@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  YouSignClient
+ * @package  YouSign\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -25,17 +25,17 @@
  * Please update the test case below to test the endpoint.
  */
 
-namespace YouSignClient;
+namespace YouSign\Client;
 
-use YouSignClient\Configuration;
-use YouSignClient\ApiException;
-use YouSignClient\ObjectSerializer;
+use YouSign\Client\Configuration;
+use YouSign\Client\ApiException;
+use YouSign\Client\ObjectSerializer;
 
 /**
  * AuthenticationsApiTest Class Doc Comment
  *
  * @category Class
- * @package  YouSignClient
+ * @package  YouSign\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */

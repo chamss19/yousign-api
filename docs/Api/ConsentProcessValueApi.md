@@ -1,4 +1,4 @@
-# YouSignClient\ConsentProcessValueApi
+# YouSign\Client\ConsentProcessValueApi
 
 All URIs are relative to *https://api.yousign.com/*
 
@@ -9,7 +9,7 @@ Method | HTTP request | Description
 [**consentProcessValuesPost**](ConsentProcessValueApi.md#consentProcessValuesPost) | **POST** /consent_process_values | Create a new Consent Process Value
 
 # **consentProcessValuesGet**
-> \YouSignClient\Model\ConsentProcessValueOutput consentProcessValuesGet($member, $authorization)
+> \YouSign\Client\Model\ConsentProcessValueOutput consentProcessValuesGet($member, $authorization)
 
 Get list of Consent Process Value
 
@@ -18,7 +18,7 @@ Get list of Consent Process Value
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new YouSignClient\Api\ConsentProcessValueApi(
+$apiInstance = new YouSign\Client\Api\ConsentProcessValueApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -44,7 +44,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\YouSignClient\Model\ConsentProcessValueOutput**](../Model/ConsentProcessValueOutput.md)
+[**\YouSign\Client\Model\ConsentProcessValueOutput**](../Model/ConsentProcessValueOutput.md)
 
 ### Authorization
 
@@ -58,7 +58,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **consentProcessValuesIdGet**
-> \YouSignClient\Model\ConsentProcessValueOutput consentProcessValuesIdGet($id, $member, $authorization)
+> \YouSign\Client\Model\ConsentProcessValueOutput consentProcessValuesIdGet($id, $member, $authorization)
 
 Get a Consent Process Value
 
@@ -67,7 +67,7 @@ Get a Consent Process Value
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new YouSignClient\Api\ConsentProcessValueApi(
+$apiInstance = new YouSign\Client\Api\ConsentProcessValueApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -95,7 +95,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\YouSignClient\Model\ConsentProcessValueOutput**](../Model/ConsentProcessValueOutput.md)
+[**\YouSign\Client\Model\ConsentProcessValueOutput**](../Model/ConsentProcessValueOutput.md)
 
 ### Authorization
 
@@ -109,7 +109,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **consentProcessValuesPost**
-> \YouSignClient\Model\ConsentProcessValueOutput consentProcessValuesPost($body, $content_type, $authorization)
+> \YouSign\Client\Model\ConsentProcessValueOutput consentProcessValuesPost($body, $content_type, $authorization)
 
 Create a new Consent Process Value
 
@@ -118,12 +118,12 @@ Create a new Consent Process Value
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new YouSignClient\Api\ConsentProcessValueApi(
+$apiInstance = new YouSign\Client\Api\ConsentProcessValueApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \YouSignClient\Model\ConsentProcessValueInput(); // \YouSignClient\Model\ConsentProcessValueInput | 
+$body = new \YouSign\Client\Model\ConsentProcessValueInput(); // \YouSign\Client\Model\ConsentProcessValueInput | 
 $content_type = "content_type_example"; // string | The MIME type of the body of the request
 $authorization = "authorization_example"; // string | Authentication credentials for HTTP authentication
 
@@ -140,13 +140,13 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\YouSignClient\Model\ConsentProcessValueInput**](../Model/ConsentProcessValueInput.md)|  |
+ **body** | [**\YouSign\Client\Model\ConsentProcessValueInput**](../Model/ConsentProcessValueInput.md)|  |
  **content_type** | [**string**](../Model/.md)| The MIME type of the body of the request | [optional]
  **authorization** | [**string**](../Model/.md)| Authentication credentials for HTTP authentication | [optional]
 
 ### Return type
 
-[**\YouSignClient\Model\ConsentProcessValueOutput**](../Model/ConsentProcessValueOutput.md)
+[**\YouSign\Client\Model\ConsentProcessValueOutput**](../Model/ConsentProcessValueOutput.md)
 
 ### Authorization
 

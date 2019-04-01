@@ -6,8 +6,8 @@ Name | Type | Description | Notes
 **id** | **string** | Resource server stamp uri | 
 **file** | **string** | Resource file uri | 
 **certificate** | **string** | Resource certificate uri (please contact support for more informations) | 
-**config** | [**\YouSignClient\Model\ServerStampConfig[]**](ServerStampConfig.md) |  | [optional] 
-**file_objects** | [**\YouSignClient\Model\FileObjectOutputWithoutFileReference[]**](FileObjectOutputWithoutFileReference.md) |  | 
+**config** | [**\YouSign\Client\Model\ServerStampConfig[]**](ServerStampConfig.md) |  | [optional] 
+**file_objects** | [**\YouSign\Client\Model\FileObjectOutputWithoutFileReference[]**](FileObjectOutputWithoutFileReference.md) |  | 
 **created_at** | [**\DateTime**](\DateTime.md) |  | 
 **updated_at** | [**\DateTime**](\DateTime.md) |  | 
 **finished_at** | [**\DateTime**](\DateTime.md) |  | 

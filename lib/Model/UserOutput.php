@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  YouSignClient
+ * @package  YouSign\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace YouSignClient\Model;
+namespace YouSign\Client\Model;
 
 use \ArrayAccess;
-use \YouSignClient\ObjectSerializer;
+use \YouSign\Client\ObjectSerializer;
 
 /**
  * UserOutput Class Doc Comment
  *
  * @category Class
- * @package  YouSignClient
+ * @package  YouSign\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -71,11 +71,11 @@ class UserOutput implements ModelInterface, ArrayAccess
 'saml_name_id' => 'string',
 'default_sign_image' => 'string',
 'fast_sign' => 'bool',
-'group' => '\YouSignClient\Model\UserGroup',
+'group' => '\YouSign\Client\Model\UserGroup',
 'notifications' => 'object',
 'deleted' => 'bool',
 'deleted_at' => '\DateTime',
-'inwebo_user_request__internal' => '\YouSignClient\Model\InweboUserRequest'    ];
+'inwebo_user_request__internal' => '\YouSign\Client\Model\InweboUserRequest'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -712,7 +712,7 @@ self::STATUS_ACTIVATED,        ];
     /**
      * Gets group
      *
-     * @return \YouSignClient\Model\UserGroup
+     * @return \YouSign\Client\Model\UserGroup
      */
     public function getGroup()
     {
@@ -722,7 +722,7 @@ self::STATUS_ACTIVATED,        ];
     /**
      * Sets group
      *
-     * @param \YouSignClient\Model\UserGroup $group group
+     * @param \YouSign\Client\Model\UserGroup $group group
      *
      * @return $this
      */
@@ -808,7 +808,7 @@ self::STATUS_ACTIVATED,        ];
     /**
      * Gets inwebo_user_request__internal
      *
-     * @return \YouSignClient\Model\InweboUserRequest
+     * @return \YouSign\Client\Model\InweboUserRequest
      */
     public function getInweboUserRequestInternal()
     {
@@ -818,7 +818,7 @@ self::STATUS_ACTIVATED,        ];
     /**
      * Sets inwebo_user_request__internal
      *
-     * @param \YouSignClient\Model\InweboUserRequest $inwebo_user_request__internal inwebo_user_request__internal
+     * @param \YouSign\Client\Model\InweboUserRequest $inwebo_user_request__internal inwebo_user_request__internal
      *
      * @return $this
      */

@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  YouSignClient
+ * @package  YouSign\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace YouSignClient\Model;
+namespace YouSign\Client\Model;
 
 use \ArrayAccess;
-use \YouSignClient\ObjectSerializer;
+use \YouSign\Client\ObjectSerializer;
 
 /**
  * ServerStampOutput Class Doc Comment
  *
  * @category Class
- * @package  YouSignClient
+ * @package  YouSign\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -59,8 +59,8 @@ class ServerStampOutput implements ModelInterface, ArrayAccess
         'id' => 'string',
 'file' => 'string',
 'certificate' => 'string',
-'config' => '\YouSignClient\Model\ServerStampConfig[]',
-'file_objects' => '\YouSignClient\Model\FileObjectOutputWithoutFileReference[]',
+'config' => '\YouSign\Client\Model\ServerStampConfig[]',
+'file_objects' => '\YouSign\Client\Model\FileObjectOutputWithoutFileReference[]',
 'created_at' => '\DateTime',
 'updated_at' => '\DateTime',
 'finished_at' => '\DateTime',
@@ -375,7 +375,7 @@ self::STATUS_DONE,        ];
     /**
      * Gets config
      *
-     * @return \YouSignClient\Model\ServerStampConfig[]
+     * @return \YouSign\Client\Model\ServerStampConfig[]
      */
     public function getConfig()
     {
@@ -385,7 +385,7 @@ self::STATUS_DONE,        ];
     /**
      * Sets config
      *
-     * @param \YouSignClient\Model\ServerStampConfig[] $config config
+     * @param \YouSign\Client\Model\ServerStampConfig[] $config config
      *
      * @return $this
      */
@@ -399,7 +399,7 @@ self::STATUS_DONE,        ];
     /**
      * Gets file_objects
      *
-     * @return \YouSignClient\Model\FileObjectOutputWithoutFileReference[]
+     * @return \YouSign\Client\Model\FileObjectOutputWithoutFileReference[]
      */
     public function getFileObjects()
     {
@@ -409,7 +409,7 @@ self::STATUS_DONE,        ];
     /**
      * Sets file_objects
      *
-     * @param \YouSignClient\Model\FileObjectOutputWithoutFileReference[] $file_objects file_objects
+     * @param \YouSign\Client\Model\FileObjectOutputWithoutFileReference[] $file_objects file_objects
      *
      * @return $this
      */

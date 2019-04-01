@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  YouSignClient
+ * @package  YouSign\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace YouSignClient\Api;
+namespace YouSign\Client\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -33,16 +33,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use YouSignClient\ApiException;
-use YouSignClient\Configuration;
-use YouSignClient\HeaderSelector;
-use YouSignClient\ObjectSerializer;
+use YouSign\Client\ApiException;
+use YouSign\Client\Configuration;
+use YouSign\Client\HeaderSelector;
+use YouSign\Client\ObjectSerializer;
 
 /**
  * FileApi Class Doc Comment
  *
  * @category Class
- * @package  YouSignClient
+ * @package  YouSign\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -94,7 +94,7 @@ class FileApi
      * @param  string $id id (required)
      * @param  string $authorization Authentication credentials for HTTP authentication (required)
      *
-     * @throws \YouSignClient\ApiException on non-2xx response
+     * @throws \YouSign\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return string
      */
@@ -112,7 +112,7 @@ class FileApi
      * @param  string $id (required)
      * @param  string $authorization Authentication credentials for HTTP authentication (required)
      *
-     * @throws \YouSignClient\ApiException on non-2xx response
+     * @throws \YouSign\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of string, HTTP status code, HTTP response headers (array of strings)
      */
@@ -371,9 +371,9 @@ class FileApi
      * @param  string $id id (required)
      * @param  string $authorization Authentication credentials for HTTP authentication (required)
      *
-     * @throws \YouSignClient\ApiException on non-2xx response
+     * @throws \YouSign\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \YouSignClient\Model\FileOutput
+     * @return \YouSign\Client\Model\FileOutput
      */
     public function filesIdDuplicatePost($id, $authorization)
     {
@@ -389,13 +389,13 @@ class FileApi
      * @param  string $id (required)
      * @param  string $authorization Authentication credentials for HTTP authentication (required)
      *
-     * @throws \YouSignClient\ApiException on non-2xx response
+     * @throws \YouSign\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \YouSignClient\Model\FileOutput, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \YouSign\Client\Model\FileOutput, HTTP status code, HTTP response headers (array of strings)
      */
     public function filesIdDuplicatePostWithHttpInfo($id, $authorization)
     {
-        $returnType = '\YouSignClient\Model\FileOutput';
+        $returnType = '\YouSign\Client\Model\FileOutput';
         $request = $this->filesIdDuplicatePostRequest($id, $authorization);
 
         try {
@@ -447,7 +447,7 @@ class FileApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\YouSignClient\Model\FileOutput',
+                        '\YouSign\Client\Model\FileOutput',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -491,7 +491,7 @@ class FileApi
      */
     public function filesIdDuplicatePostAsyncWithHttpInfo($id, $authorization)
     {
-        $returnType = '\YouSignClient\Model\FileOutput';
+        $returnType = '\YouSign\Client\Model\FileOutput';
         $request = $this->filesIdDuplicatePostRequest($id, $authorization);
 
         return $this->client
@@ -648,9 +648,9 @@ class FileApi
      * @param  string $id id (required)
      * @param  string $authorization Authentication credentials for HTTP authentication (required)
      *
-     * @throws \YouSignClient\ApiException on non-2xx response
+     * @throws \YouSign\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \YouSignClient\Model\FileOutput
+     * @return \YouSign\Client\Model\FileOutput
      */
     public function filesIdGet($id, $authorization)
     {
@@ -666,13 +666,13 @@ class FileApi
      * @param  string $id (required)
      * @param  string $authorization Authentication credentials for HTTP authentication (required)
      *
-     * @throws \YouSignClient\ApiException on non-2xx response
+     * @throws \YouSign\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \YouSignClient\Model\FileOutput, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \YouSign\Client\Model\FileOutput, HTTP status code, HTTP response headers (array of strings)
      */
     public function filesIdGetWithHttpInfo($id, $authorization)
     {
-        $returnType = '\YouSignClient\Model\FileOutput';
+        $returnType = '\YouSign\Client\Model\FileOutput';
         $request = $this->filesIdGetRequest($id, $authorization);
 
         try {
@@ -724,7 +724,7 @@ class FileApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\YouSignClient\Model\FileOutput',
+                        '\YouSign\Client\Model\FileOutput',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -768,7 +768,7 @@ class FileApi
      */
     public function filesIdGetAsyncWithHttpInfo($id, $authorization)
     {
-        $returnType = '\YouSignClient\Model\FileOutput';
+        $returnType = '\YouSign\Client\Model\FileOutput';
         $request = $this->filesIdGetRequest($id, $authorization);
 
         return $this->client
@@ -922,13 +922,13 @@ class FileApi
      *
      * Create a new File
      *
-     * @param  \YouSignClient\Model\FileInput $body body (required)
+     * @param  \YouSign\Client\Model\FileInput $body body (required)
      * @param  string $content_type The MIME type of the body of the request (required)
      * @param  string $authorization Authentication credentials for HTTP authentication (required)
      *
-     * @throws \YouSignClient\ApiException on non-2xx response
+     * @throws \YouSign\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \YouSignClient\Model\FileOutput
+     * @return \YouSign\Client\Model\FileOutput
      */
     public function filesPost($body, $content_type, $authorization)
     {
@@ -941,17 +941,17 @@ class FileApi
      *
      * Create a new File
      *
-     * @param  \YouSignClient\Model\FileInput $body (required)
+     * @param  \YouSign\Client\Model\FileInput $body (required)
      * @param  string $content_type The MIME type of the body of the request (required)
      * @param  string $authorization Authentication credentials for HTTP authentication (required)
      *
-     * @throws \YouSignClient\ApiException on non-2xx response
+     * @throws \YouSign\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \YouSignClient\Model\FileOutput, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \YouSign\Client\Model\FileOutput, HTTP status code, HTTP response headers (array of strings)
      */
     public function filesPostWithHttpInfo($body, $content_type, $authorization)
     {
-        $returnType = '\YouSignClient\Model\FileOutput';
+        $returnType = '\YouSign\Client\Model\FileOutput';
         $request = $this->filesPostRequest($body, $content_type, $authorization);
 
         try {
@@ -1003,7 +1003,7 @@ class FileApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\YouSignClient\Model\FileOutput',
+                        '\YouSign\Client\Model\FileOutput',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1018,7 +1018,7 @@ class FileApi
      *
      * Create a new File
      *
-     * @param  \YouSignClient\Model\FileInput $body (required)
+     * @param  \YouSign\Client\Model\FileInput $body (required)
      * @param  string $content_type The MIME type of the body of the request (required)
      * @param  string $authorization Authentication credentials for HTTP authentication (required)
      *
@@ -1040,7 +1040,7 @@ class FileApi
      *
      * Create a new File
      *
-     * @param  \YouSignClient\Model\FileInput $body (required)
+     * @param  \YouSign\Client\Model\FileInput $body (required)
      * @param  string $content_type The MIME type of the body of the request (required)
      * @param  string $authorization Authentication credentials for HTTP authentication (required)
      *
@@ -1049,7 +1049,7 @@ class FileApi
      */
     public function filesPostAsyncWithHttpInfo($body, $content_type, $authorization)
     {
-        $returnType = '\YouSignClient\Model\FileOutput';
+        $returnType = '\YouSign\Client\Model\FileOutput';
         $request = $this->filesPostRequest($body, $content_type, $authorization);
 
         return $this->client
@@ -1092,7 +1092,7 @@ class FileApi
     /**
      * Create request for operation 'filesPost'
      *
-     * @param  \YouSignClient\Model\FileInput $body (required)
+     * @param  \YouSign\Client\Model\FileInput $body (required)
      * @param  string $content_type The MIME type of the body of the request (required)
      * @param  string $authorization Authentication credentials for HTTP authentication (required)
      *

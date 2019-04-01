@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  YouSignClient
+ * @package  YouSign\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace YouSignClient\Model;
+namespace YouSign\Client\Model;
 
 use \ArrayAccess;
-use \YouSignClient\ObjectSerializer;
+use \YouSign\Client\ObjectSerializer;
 
 /**
  * OperationOutput Class Doc Comment
  *
  * @category Class
- * @package  YouSignClient
+ * @package  YouSign\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -59,7 +59,7 @@ class OperationOutput implements ModelInterface, ArrayAccess
         'id' => 'string',
 'created_at' => '\DateTime',
 'updated_at' => '\DateTime',
-'authentication' => '\YouSignClient\Model\AuthenticationInweboOutput',
+'authentication' => '\YouSign\Client\Model\AuthenticationInweboOutput',
 'mode' => 'string',
 'status' => 'string',
 'type' => 'string',
@@ -380,7 +380,7 @@ self::TYPE_REFUSE,        ];
     /**
      * Gets authentication
      *
-     * @return \YouSignClient\Model\AuthenticationInweboOutput
+     * @return \YouSign\Client\Model\AuthenticationInweboOutput
      */
     public function getAuthentication()
     {
@@ -390,7 +390,7 @@ self::TYPE_REFUSE,        ];
     /**
      * Sets authentication
      *
-     * @param \YouSignClient\Model\AuthenticationInweboOutput $authentication authentication
+     * @param \YouSign\Client\Model\AuthenticationInweboOutput $authentication authentication
      *
      * @return $this
      */

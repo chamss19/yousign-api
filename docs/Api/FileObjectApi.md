@@ -1,4 +1,4 @@
-# YouSignClient\FileObjectApi
+# YouSign\Client\FileObjectApi
 
 All URIs are relative to *https://api.yousign.com/*
 
@@ -21,7 +21,7 @@ Delete a File Object
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new YouSignClient\Api\FileObjectApi(
+$apiInstance = new YouSign\Client\Api\FileObjectApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -58,7 +58,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **fileObjectsIdGet**
-> \YouSignClient\Model\FileObjectOutput fileObjectsIdGet($id)
+> \YouSign\Client\Model\FileObjectOutput fileObjectsIdGet($id)
 
 Find a File Object by ID
 
@@ -69,7 +69,7 @@ Get a File Object
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new YouSignClient\Api\FileObjectApi(
+$apiInstance = new YouSign\Client\Api\FileObjectApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -93,7 +93,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\YouSignClient\Model\FileObjectOutput**](../Model/FileObjectOutput.md)
+[**\YouSign\Client\Model\FileObjectOutput**](../Model/FileObjectOutput.md)
 
 ### Authorization
 
@@ -107,7 +107,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **fileObjectsIdPut**
-> \YouSignClient\Model\FileObjectOutput fileObjectsIdPut($body, $id)
+> \YouSign\Client\Model\FileObjectOutput fileObjectsIdPut($body, $id)
 
 Update a File Object
 
@@ -118,12 +118,12 @@ Update a File Object
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new YouSignClient\Api\FileObjectApi(
+$apiInstance = new YouSign\Client\Api\FileObjectApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \YouSignClient\Model\FileObjectInput(); // \YouSignClient\Model\FileObjectInput | 
+$body = new \YouSign\Client\Model\FileObjectInput(); // \YouSign\Client\Model\FileObjectInput | 
 $id = "id_example"; // string | 
 
 try {
@@ -139,12 +139,12 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\YouSignClient\Model\FileObjectInput**](../Model/FileObjectInput.md)|  |
+ **body** | [**\YouSign\Client\Model\FileObjectInput**](../Model/FileObjectInput.md)|  |
  **id** | [**string**](../Model/.md)|  |
 
 ### Return type
 
-[**\YouSignClient\Model\FileObjectOutput**](../Model/FileObjectOutput.md)
+[**\YouSign\Client\Model\FileObjectOutput**](../Model/FileObjectOutput.md)
 
 ### Authorization
 
@@ -158,7 +158,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **fileObjectsPost**
-> \YouSignClient\Model\FileObjectOutput fileObjectsPost($body)
+> \YouSign\Client\Model\FileObjectOutput fileObjectsPost($body)
 
 Create a new File Object
 
@@ -169,12 +169,12 @@ Create a new fileObject
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new YouSignClient\Api\FileObjectApi(
+$apiInstance = new YouSign\Client\Api\FileObjectApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \YouSignClient\Model\FileObjectInput(); // \YouSignClient\Model\FileObjectInput | 
+$body = new \YouSign\Client\Model\FileObjectInput(); // \YouSign\Client\Model\FileObjectInput | 
 
 try {
     $result = $apiInstance->fileObjectsPost($body);
@@ -189,11 +189,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\YouSignClient\Model\FileObjectInput**](../Model/FileObjectInput.md)|  |
+ **body** | [**\YouSign\Client\Model\FileObjectInput**](../Model/FileObjectInput.md)|  |
 
 ### Return type
 
-[**\YouSignClient\Model\FileObjectOutput**](../Model/FileObjectOutput.md)
+[**\YouSign\Client\Model\FileObjectOutput**](../Model/FileObjectOutput.md)
 
 ### Authorization
 

@@ -1,4 +1,4 @@
-# YouSignClient\ServerStampApi
+# YouSign\Client\ServerStampApi
 
 All URIs are relative to *https://api.yousign.com/*
 
@@ -8,7 +8,7 @@ Method | HTTP request | Description
 [**serverStampsPost**](ServerStampApi.md#serverStampsPost) | **POST** /server_stamps | 
 
 # **serverStampsIdGet**
-> \YouSignClient\Model\ServerStampOutput serverStampsIdGet($id, $content_type, $authorization)
+> \YouSign\Client\Model\ServerStampOutput serverStampsIdGet($id, $content_type, $authorization)
 
 
 
@@ -17,7 +17,7 @@ Method | HTTP request | Description
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new YouSignClient\Api\ServerStampApi(
+$apiInstance = new YouSign\Client\Api\ServerStampApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -45,7 +45,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\YouSignClient\Model\ServerStampOutput**](../Model/ServerStampOutput.md)
+[**\YouSign\Client\Model\ServerStampOutput**](../Model/ServerStampOutput.md)
 
 ### Authorization
 
@@ -59,7 +59,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **serverStampsPost**
-> \YouSignClient\Model\ServerStampOutput serverStampsPost($body, $content_type, $authorization)
+> \YouSign\Client\Model\ServerStampOutput serverStampsPost($body, $content_type, $authorization)
 
 
 
@@ -68,12 +68,12 @@ No authorization required
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new YouSignClient\Api\ServerStampApi(
+$apiInstance = new YouSign\Client\Api\ServerStampApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \YouSignClient\Model\ServerStampInput(); // \YouSignClient\Model\ServerStampInput | 
+$body = new \YouSign\Client\Model\ServerStampInput(); // \YouSign\Client\Model\ServerStampInput | 
 $content_type = "content_type_example"; // string | The MIME type of the body of the request
 $authorization = "authorization_example"; // string | Authentication credentials for HTTP authentication
 
@@ -90,13 +90,13 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\YouSignClient\Model\ServerStampInput**](../Model/ServerStampInput.md)|  |
+ **body** | [**\YouSign\Client\Model\ServerStampInput**](../Model/ServerStampInput.md)|  |
  **content_type** | [**string**](../Model/.md)| The MIME type of the body of the request |
  **authorization** | [**string**](../Model/.md)| Authentication credentials for HTTP authentication |
 
 ### Return type
 
-[**\YouSignClient\Model\ServerStampOutput**](../Model/ServerStampOutput.md)
+[**\YouSign\Client\Model\ServerStampOutput**](../Model/ServerStampOutput.md)
 
 ### Authorization
 

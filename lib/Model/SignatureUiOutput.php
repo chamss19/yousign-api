@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  YouSignClient
+ * @package  YouSign\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace YouSignClient\Model;
+namespace YouSign\Client\Model;
 
 use \ArrayAccess;
-use \YouSignClient\ObjectSerializer;
+use \YouSign\Client\ObjectSerializer;
 
 /**
  * SignatureUiOutput Class Doc Comment
  *
  * @category Class
- * @package  YouSignClient
+ * @package  YouSign\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -72,7 +72,7 @@ class SignatureUiOutput implements ModelInterface, ArrayAccess
 'sign_image_types_available' => 'string[]',
 'default_language' => 'string',
 'languages' => 'string[]',
-'labels' => '\YouSignClient\Model\SignatureUiLabelOutput[]',
+'labels' => '\YouSign\Client\Model\SignatureUiLabelOutput[]',
 'fonts' => 'string[]',
 'style' => 'string',
 'redirect_cancel' => 'object',
@@ -760,7 +760,7 @@ self::SIGN_IMAGE_TYPES_AVAILABLE_CUSTOM,        ];
     /**
      * Gets labels
      *
-     * @return \YouSignClient\Model\SignatureUiLabelOutput[]
+     * @return \YouSign\Client\Model\SignatureUiLabelOutput[]
      */
     public function getLabels()
     {
@@ -770,7 +770,7 @@ self::SIGN_IMAGE_TYPES_AVAILABLE_CUSTOM,        ];
     /**
      * Sets labels
      *
-     * @param \YouSignClient\Model\SignatureUiLabelOutput[] $labels labels
+     * @param \YouSign\Client\Model\SignatureUiLabelOutput[] $labels labels
      *
      * @return $this
      */
