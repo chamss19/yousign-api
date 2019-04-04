@@ -44,31 +44,31 @@ class UserGroup implements ModelInterface, ArrayAccess
     const DISCRIMINATOR = null;
 
     /**
-      * The original name of the model.
-      *
-      * @var string
-      */
+     * The original name of the model.
+     *
+     * @var string
+     */
     protected static $swaggerModelName = 'UserGroup';
 
     /**
-      * Array of property to type mappings. Used for (de)serialization
-      *
-      * @var string[]
-      */
+     * Array of property to type mappings. Used for (de)serialization
+     *
+     * @var string[]
+     */
     protected static $swaggerTypes = [
         'id' => 'string',
-'name' => 'string',
-'permissions' => 'string[]'    ];
+        'name' => 'string',
+        'permissions' => 'string[]'];
 
     /**
-      * Array of property to format mappings. Used for (de)serialization
-      *
-      * @var string[]
-      */
+     * Array of property to format mappings. Used for (de)serialization
+     *
+     * @var string[]
+     */
     protected static $swaggerFormats = [
         'id' => null,
-'name' => null,
-'permissions' => null    ];
+        'name' => null,
+        'permissions' => null];
 
     /**
      * Array of property to type mappings. Used for (de)serialization
@@ -98,8 +98,8 @@ class UserGroup implements ModelInterface, ArrayAccess
      */
     protected static $attributeMap = [
         'id' => 'id',
-'name' => 'name',
-'permissions' => 'permissions'    ];
+        'name' => 'name',
+        'permissions' => 'permissions'];
 
     /**
      * Array of attributes to setter functions (for deserialization of responses)
@@ -108,8 +108,8 @@ class UserGroup implements ModelInterface, ArrayAccess
      */
     protected static $setters = [
         'id' => 'setId',
-'name' => 'setName',
-'permissions' => 'setPermissions'    ];
+        'name' => 'setName',
+        'permissions' => 'setPermissions'];
 
     /**
      * Array of attributes to getter functions (for serialization of requests)
@@ -118,8 +118,8 @@ class UserGroup implements ModelInterface, ArrayAccess
      */
     protected static $getters = [
         'id' => 'getId',
-'name' => 'getName',
-'permissions' => 'getPermissions'    ];
+        'name' => 'getName',
+        'permissions' => 'getPermissions'];
 
     /**
      * Array of attributes where the key is the local name,
@@ -162,12 +162,21 @@ class UserGroup implements ModelInterface, ArrayAccess
         return self::$swaggerModelName;
     }
 
-    const PERMISSIONS_PROCEDURE = 'procedure';
-const PERMISSIONS_SIGN = 'sign';
-const PERMISSIONS_COMPANY = 'company';
-const PERMISSIONS_USER = 'user';
-const PERMISSIONS_API_KEY = 'api_key';
-const PERMISSIONS_CONTACT = 'contact';
+    const PERMISSIONS_PROCEDURE_WRITE = 'procedure_write';
+    const PERMISSIONS_PROCEDURE_TEMPLATE_WRITE = 'procedure_template_write';
+    const PERMISSIONS_PROCEDURE_CREATE_FROM_TEMPLATE = 'procedure_create_from_template';
+    const PERMISSIONS_PROCEDURE_CUSTOM_FIELD = 'procedure_custom_field';
+    const PERMISSIONS_SIGN = 'sign';
+    const PERMISSIONS_COMPANY = 'company';
+    const PERMISSIONS_USER = 'user';
+    const PERMISSIONS_API_KEY = 'api_key';
+    const PERMISSIONS_CONTACT = 'contact';
+    const PERMISSIONS_WORKSPACE = 'workspace';
+    const PERMISSIONS_SIGNATURE_UI = 'signature_ui';
+    const PERMISSIONS_CERTIFICATE = 'certificate';
+    const PERMISSIONS_ARCHIVE = 'archive';
+    const PERMISSIONS_CONTACT_CUSTOM_FIELD = 'contact_custom_field';
+    const PERMISSIONS_ORGANIZATION = 'organization';
 
     /**
      * Gets allowable values of the enum
@@ -177,12 +186,24 @@ const PERMISSIONS_CONTACT = 'contact';
     public function getPermissionsAllowableValues()
     {
         return [
-            self::PERMISSIONS_PROCEDURE,
-self::PERMISSIONS_SIGN,
-self::PERMISSIONS_COMPANY,
-self::PERMISSIONS_USER,
-self::PERMISSIONS_API_KEY,
-self::PERMISSIONS_CONTACT,        ];
+            self::PERMISSIONS_PROCEDURE_WRITE,
+            self::PERMISSIONS_PROCEDURE_TEMPLATE_WRITE,
+            self::PERMISSIONS_PROCEDURE_CREATE_FROM_TEMPLATE,
+            self::PERMISSIONS_PROCEDURE_CUSTOM_FIELD,
+            self::PERMISSIONS_SIGN,
+            self::PERMISSIONS_COMPANY,
+            self::PERMISSIONS_USER,
+            self::PERMISSIONS_API_KEY,
+            self::PERMISSIONS_CONTACT,
+            self::PERMISSIONS_WORKSPACE,
+            self::PERMISSIONS_SIGNATURE_UI,
+            self::PERMISSIONS_CERTIFICATE,
+            self::PERMISSIONS_ARCHIVE,
+            self::PERMISSIONS_CONTACT_CUSTOM_FIELD,
+            self::PERMISSIONS_ORGANIZATION,
+
+
+        ];
     }
 
     /**
@@ -312,6 +333,7 @@ self::PERMISSIONS_CONTACT,        ];
 
         return $this;
     }
+
     /**
      * Returns true if offset exists. False otherwise.
      *
@@ -340,7 +362,7 @@ self::PERMISSIONS_CONTACT,        ];
      * Sets value based on offset.
      *
      * @param integer $offset Offset
-     * @param mixed   $value  Value to be set
+     * @param mixed $value Value to be set
      *
      * @return void
      */
