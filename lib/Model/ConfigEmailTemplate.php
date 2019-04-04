@@ -44,33 +44,33 @@ class ConfigEmailTemplate implements ModelInterface, ArrayAccess
     const DISCRIMINATOR = null;
 
     /**
-      * The original name of the model.
-      *
-      * @var string
-      */
+     * The original name of the model.
+     *
+     * @var string
+     */
     protected static $swaggerModelName = 'ConfigEmailTemplate';
 
     /**
-      * Array of property to type mappings. Used for (de)serialization
-      *
-      * @var string[]
-      */
+     * Array of property to type mappings. Used for (de)serialization
+     *
+     * @var string[]
+     */
     protected static $swaggerTypes = [
         'to' => 'string[]',
-'subject' => 'string',
-'message' => 'string',
-'from_name' => 'string'    ];
+        'subject' => 'string',
+        'message' => 'string',
+        'from_name' => 'string'];
 
     /**
-      * Array of property to format mappings. Used for (de)serialization
-      *
-      * @var string[]
-      */
+     * Array of property to format mappings. Used for (de)serialization
+     *
+     * @var string[]
+     */
     protected static $swaggerFormats = [
         'to' => null,
-'subject' => null,
-'message' => null,
-'from_name' => null    ];
+        'subject' => null,
+        'message' => null,
+        'from_name' => null];
 
     /**
      * Array of property to type mappings. Used for (de)serialization
@@ -100,9 +100,9 @@ class ConfigEmailTemplate implements ModelInterface, ArrayAccess
      */
     protected static $attributeMap = [
         'to' => 'to',
-'subject' => 'subject',
-'message' => 'message',
-'from_name' => 'fromName'    ];
+        'subject' => 'subject',
+        'message' => 'message',
+        'from_name' => 'fromName'];
 
     /**
      * Array of attributes to setter functions (for deserialization of responses)
@@ -111,9 +111,9 @@ class ConfigEmailTemplate implements ModelInterface, ArrayAccess
      */
     protected static $setters = [
         'to' => 'setTo',
-'subject' => 'setSubject',
-'message' => 'setMessage',
-'from_name' => 'setFromName'    ];
+        'subject' => 'setSubject',
+        'message' => 'setMessage',
+        'from_name' => 'setFromName'];
 
     /**
      * Array of attributes to getter functions (for serialization of requests)
@@ -122,9 +122,9 @@ class ConfigEmailTemplate implements ModelInterface, ArrayAccess
      */
     protected static $getters = [
         'to' => 'getTo',
-'subject' => 'getSubject',
-'message' => 'getMessage',
-'from_name' => 'getFromName'    ];
+        'subject' => 'getSubject',
+        'message' => 'getMessage',
+        'from_name' => 'getFromName'];
 
     /**
      * Array of attributes where the key is the local name,
@@ -168,13 +168,14 @@ class ConfigEmailTemplate implements ModelInterface, ArrayAccess
     }
 
     const TO_MEMBERS = '@members';
-const TO_MEMBERSAUTO = '@members.auto';
-const TO_MEMBERSPENDING = '@members.pending';
-const TO_MEMBERSPROCESSING = '@members.processing';
-const TO_MEMBERSDONE = '@members.done';
-const TO_MEMBERSREFUSED = '@members.refused';
-const TO_MEMBER = '@member';
-const TO_CREATOR = '@creator';
+    const TO_MEMBERSAUTO = '@members.auto';
+    const TO_MEMBERSPENDING = '@members.pending';
+    const TO_MEMBERSPROCESSING = '@members.processing';
+    const TO_MEMBERSDONE = '@members.done';
+    const TO_MEMBERSREFUSED = '@members.refused';
+    const TO_MEMBER = '@member';
+    const TO_CREATOR = '@creator';
+    const TO_SUBSCRIBERSGROUP0 = '@subscribers.group-0';
 
     /**
      * Gets allowable values of the enum
@@ -185,13 +186,14 @@ const TO_CREATOR = '@creator';
     {
         return [
             self::TO_MEMBERS,
-self::TO_MEMBERSAUTO,
-self::TO_MEMBERSPENDING,
-self::TO_MEMBERSPROCESSING,
-self::TO_MEMBERSDONE,
-self::TO_MEMBERSREFUSED,
-self::TO_MEMBER,
-self::TO_CREATOR,        ];
+            self::TO_MEMBERSAUTO,
+            self::TO_MEMBERSPENDING,
+            self::TO_MEMBERSPROCESSING,
+            self::TO_MEMBERSDONE,
+            self::TO_MEMBERSREFUSED,
+            self::TO_MEMBER,
+            self::TO_CREATOR,
+            self::TO_SUBSCRIBERSGROUP0];
     }
 
     /**
@@ -352,6 +354,7 @@ self::TO_CREATOR,        ];
 
         return $this;
     }
+
     /**
      * Returns true if offset exists. False otherwise.
      *
@@ -380,7 +383,7 @@ self::TO_CREATOR,        ];
      * Sets value based on offset.
      *
      * @param integer $offset Offset
-     * @param mixed   $value  Value to be set
+     * @param mixed $value Value to be set
      *
      * @return void
      */
