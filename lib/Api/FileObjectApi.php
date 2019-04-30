@@ -855,14 +855,15 @@ class FileObjectApi
      * Create a new File Object
      *
      * @param  \YouSign\Client\Model\FileObjectInput $body body (required)
-     *
+     * @param  string $content_type The MIME type of the body of the request (required)
+     * @param  string $authorization Authentication credentials for HTTP authentication (required)
      * @throws \YouSign\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return \YouSign\Client\Model\FileObjectOutput
      */
-    public function fileObjectsPost($body)
+    public function fileObjectsPost($body, $content_type, $authorization)
     {
-        list($response) = $this->fileObjectsPostWithHttpInfo($body);
+        list($response) = $this->fileObjectsPostWithHttpInfo($body, $content_type, $authorization);
         return $response;
     }
 
@@ -872,15 +873,16 @@ class FileObjectApi
      * Create a new File Object
      *
      * @param  \YouSign\Client\Model\FileObjectInput $body (required)
-     *
+     * @param  string $content_type The MIME type of the body of the request (required)
+     * @param  string $authorization Authentication credentials for HTTP authentication (required)
      * @throws \YouSign\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of \YouSign\Client\Model\FileObjectOutput, HTTP status code, HTTP response headers (array of strings)
      */
-    public function fileObjectsPostWithHttpInfo($body)
+    public function fileObjectsPostWithHttpInfo($body, $content_type, $authorization)
     {
         $returnType = '\YouSign\Client\Model\FileObjectOutput';
-        $request = $this->fileObjectsPostRequest($body);
+        $request = $this->fileObjectsPostRequest($body, $content_type, $authorization);
 
         try {
             $options = $this->createHttpClientOption();
@@ -947,13 +949,14 @@ class FileObjectApi
      * Create a new File Object
      *
      * @param  \YouSign\Client\Model\FileObjectInput $body (required)
-     *
+     * @param  string $content_type The MIME type of the body of the request (required)
+     * @param  string $authorization Authentication credentials for HTTP authentication (required)
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function fileObjectsPostAsync($body)
+    public function fileObjectsPostAsync($body, $content_type, $authorization)
     {
-        return $this->fileObjectsPostAsyncWithHttpInfo($body)
+        return $this->fileObjectsPostAsyncWithHttpInfo($body, $content_type, $authorization)
             ->then(
                 function ($response) {
                     return $response[0];
@@ -967,14 +970,15 @@ class FileObjectApi
      * Create a new File Object
      *
      * @param  \YouSign\Client\Model\FileObjectInput $body (required)
-     *
+     * @param  string $content_type The MIME type of the body of the request (required)
+     * @param  string $authorization Authentication credentials for HTTP authentication (required)
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function fileObjectsPostAsyncWithHttpInfo($body)
+    public function fileObjectsPostAsyncWithHttpInfo($body, $content_type, $authorization)
     {
         $returnType = '\YouSign\Client\Model\FileObjectOutput';
-        $request = $this->fileObjectsPostRequest($body);
+        $request = $this->fileObjectsPostRequest($body, $content_type, $authorization);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -1017,16 +1021,28 @@ class FileObjectApi
      * Create request for operation 'fileObjectsPost'
      *
      * @param  \YouSign\Client\Model\FileObjectInput $body (required)
-     *
+     * @param  string $content_type The MIME type of the body of the request (required)
+     * @param  string $authorization Authentication credentials for HTTP authentication (required)
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
      */
-    protected function fileObjectsPostRequest($body)
+    protected function fileObjectsPostRequest($body, $content_type, $authorization)
     {
         // verify the required parameter 'body' is set
         if ($body === null || (is_array($body) && count($body) === 0)) {
             throw new \InvalidArgumentException(
                 'Missing the required parameter $body when calling fileObjectsPost'
+            );
+        }
+        if ($content_type === null || (is_array($content_type) && count($content_type) === 0)) {
+            throw new \InvalidArgumentException(
+                'Missing the required parameter $content_type when calling fileObjectsPost'
+            );
+        }
+        // verify the required parameter 'authorization' is set
+        if ($authorization === null || (is_array($authorization) && count($authorization) === 0)) {
+            throw new \InvalidArgumentException(
+                'Missing the required parameter $authorization when calling fileObjectsPost'
             );
         }
 
@@ -1037,7 +1053,14 @@ class FileObjectApi
         $httpBody = '';
         $multipart = false;
 
-
+        // header params
+        if ($content_type !== null) {
+            $headerParams['Content-Type'] = ObjectSerializer::toHeaderValue($content_type);
+        }
+        // header params
+        if ($authorization !== null) {
+            $headerParams['Authorization'] = ObjectSerializer::toHeaderValue($authorization);
+        }
 
         // body params
         $_tempBody = null;
